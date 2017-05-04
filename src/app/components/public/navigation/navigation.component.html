@@ -14,20 +14,9 @@
                 <li><a routerLink="/about-us">ABOUT THE APP</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <!--<li class="dropdown" *ngIf="isLoggedIn()">
-                    <a routerLink="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> PROFILE
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a routerLink="#">MY PROFILE</a></li>
-                        <li class="divider"></li>
-                        <li><a routerLink="#">EDIT PROFILE</a></li>
-                        <li><a routerLink="#">JOBS VIEW</a></li>
-                        <li><a routerLink="#">GROUP</a></li>
-                        <li><a routerLink="#">TASKS</a></li>
-                    </ul>
-                </li>-->
+
                 <li *ngIf="isLoggedIn()"><a routerLink="/my-group"><span class="glyphicon glyphicon-globe"></span> MY GROUP</a></li>
-                <li *ngIf="isLoggedIn()"><a routerLink="/jobs"><span class="glyphicon glyphicon-equalizer"></span> JOBS</a></li>
+                <li *ngIf="isLoggedIn()"><a routerLink="/jobs/1"><span class="glyphicon glyphicon-equalizer"></span> JOBS</a></li>
                 <li *ngIf="isLoggedIn()"><a routerLink="/my-profile"><span class="glyphicon glyphicon-user"></span> MY PROFILE</a></li>
                 <li *ngIf="isLoggedIn()"><a (click)="logout()" routerLink="/home"><span class="glyphicon glyphicon-log-out"></span> LOGOUT</a></li>
                 <li *ngIf="!isLoggedIn()"><a routerLink="/login"><span class="glyphicon glyphicon-log-in" ></span> LOGIN</a></li>
