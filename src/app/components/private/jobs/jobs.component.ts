@@ -28,6 +28,7 @@ export class JobsComponent implements OnInit {
 
         let page = this.route.params['_value'].page;
         for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
+          this.jobs = [];
           let job = result[i];
           let currentJob: Job = new Job(job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
           currentJob.id = job._id;
