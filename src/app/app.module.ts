@@ -9,8 +9,6 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/public/navigation/navigation.component';
 import { HowToUseComponent } from './components/public/how-to-use/how-to-use.component';
 import { AboutUsComponent } from './components/public/about-us/about-us.component';
-import { TeenJobsComponent } from './components/public/teen-jobs/teen-jobs.component';
-import { ParentGuideComponent } from './components/public/parent-guide/parent-guide.component';
 import { HomeComponent } from './components/public/home/home.component';
 import { FooterComponent } from './components/public/footer/footer.component';
 import { MyProfileComponent } from './components/private/my-profile/my-profile.component';
@@ -43,8 +41,6 @@ import { HightlightItemDirective } from './directives/hightlight-item.directive'
     routedComponents,
     HowToUseComponent,
     AboutUsComponent,
-    TeenJobsComponent,
-    ParentGuideComponent,
     HomeComponent,
     FooterComponent,
     MyProfileComponent,

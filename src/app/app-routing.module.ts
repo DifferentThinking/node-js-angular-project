@@ -5,8 +5,6 @@ import { RegisterComponent } from './components/public/register/register.compone
 import { LoginComponent } from './components/public/login/login.component';
 import { HowToUseComponent } from './components/public/how-to-use/how-to-use.component';
 import { AboutUsComponent } from './components/public/about-us/about-us.component';
-import { ParentGuideComponent } from './components/public/parent-guide/parent-guide.component';
-import { TeenJobsComponent } from './components/public/teen-jobs/teen-jobs.component';
 import { HomeComponent } from './components/public/home/home.component';
 import { NotLoggedInGuard } from './services/not.logged.in.guard';
 import { MyProfileComponent } from './components/private/my-profile/my-profile.component';
@@ -48,14 +46,6 @@ const routes: Routes = [
   {
     "path": 'about-us',
     component: AboutUsComponent
-  },
-  {
-    "path": 'parent-guide',
-    component: ParentGuideComponent,
-  },
-  {
-    "path": 'teen-jobs',
-    component: TeenJobsComponent
   },
   {
     "path": 'my-profile',
@@ -105,4 +95,4 @@ const routes: Routes = [
 
 export class AppRoutingModule { }
 
-export const routedComponents = [ RegisterComponent, LoginComponent, HowToUseComponent, AboutUsComponent, ContactsComponent, ParentGuideComponent, TeenJobsComponent, HomeComponent, FooterComponent, MyProfileComponent, UpdateInfoComponent, MyGroupComponent, JobsComponent, SingleJobComponent, AddJobComponent, DonateComponent, AddTaskComponent ];
+export const routedComponents = [ RegisterComponent, LoginComponent, HowToUseComponent, AboutUsComponent, HomeComponent, FooterComponent, MyProfileComponent, UpdateInfoComponent, MyGroupComponent, JobsComponent, SingleJobComponent, AddJobComponent, DonateComponent, AddTaskComponent ];
