@@ -5,8 +5,8 @@ webpackJsonp([0,3],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AuthenticationService; });
@@ -106,8 +106,8 @@ var User = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return JobsService; });
@@ -174,10 +174,10 @@ var JobsService = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(78);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return UsersService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -352,6 +352,7 @@ var AddTaskComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_job__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(78);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return JobsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -365,16 +366,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var JobsComponent = (function () {
-    function JobsComponent(jobsService) {
+    function JobsComponent(jobsService, route) {
         this.jobsService = jobsService;
+        this.route = route;
         this.jobs = [];
+        this.pages = [];
     }
     JobsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.getAllJobs()
             .then(function (result) {
+            var pageNumber = 0;
             for (var i = 0; i < result.length; i += 1) {
+                if (i % 7 === 0) {
+                    pageNumber += 1;
+                    _this.pages.push(pageNumber);
+                }
+            }
+            var page = _this.route.params['_value'].page;
+            for (var i = (page * 8) - 8; i < (page * 8); i += 1) {
                 var job = result[i];
                 var currentJob = new __WEBPACK_IMPORTED_MODULE_1__models_job__["a" /* Job */](job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
                 currentJob.id = job._id;
@@ -401,10 +413,10 @@ var JobsComponent = (function () {
             template: __webpack_require__(710),
             styles: [__webpack_require__(694)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], JobsComponent);
     return JobsComponent;
-    var _a;
+    var _a, _b;
 }());
 //# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/jobs.component.js.map
 
@@ -505,7 +517,7 @@ var MyProfileComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_job__ = __webpack_require__(222);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SingleJobComponent; });
@@ -786,7 +798,7 @@ var HowToUseComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return GroupsService; });
@@ -942,7 +954,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_register_register_component__ = __webpack_require__(528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_login_login_component__ = __webpack_require__(526);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_public_how_to_use_how_to_use_component__ = __webpack_require__(347);
@@ -1115,7 +1127,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(484);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(523);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(524);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_public_navigation_navigation_component__ = __webpack_require__(527);
@@ -1907,7 +1919,7 @@ module.exports = "<div class=\"container\">\n    <h2>ADD NEW TASK</h2>\n    <hr>
 /***/ 710:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"container-fluid bg-3 text-center\">\n        <div class=\"row\">\n            <div class=\"col-lg-12 center\">\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\n                </h2>\n            </div>\n        </div>\n\n        <div class=\"col-lg-6\">\n            <div class=\"input-group\">\n                <!--<p><a class=\"btn btn-lg btn-primary\" routerLink=\"№\" role=\"button\">SORT JOBS BY TITLE</a></p>-->\n                <button (click)=\"sortJobs\" class=\"btn btn-lg btn-warning\" type=\"button\">SORT JOBS BY TITLE</button>\n            </div>\n        </div>\n        <br>\n        <div class=\"col-lg-6\">\n            <div class=\"input-group\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\n                <span class=\"input-group-btn\">\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\n                </span>\n            </div>\n        </div>\n        <br> <br>\n        <div class=\"col-lg-12 center\">\n            <ul>\n                <li>\n                    <div id=\"picture-container\" *ngFor=\"let job of this.jobs;\" class=\"col-sm-3\">\n                        <a routerLink=\"/jobs/{{job.id}}\"> {{job.title | uppercase}}\n                        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" alt=\"Image\">\n                    </a>\n                    </div>\n                </li>\n            </ul>\n        </div>\n    </div>\n    <br>\n\n    <div class=\"row\">\n        <div class=\"col-lg-12 text-center\">\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\n        </div>\n    </div>\n</div>\n<br><br>\n<br>"
+module.exports = "<div class=\"container\">\n    <div class=\"container-fluid bg-3 text-center\">\n        <div class=\"row\">\n            <div class=\"col-lg-12 center\">\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\n                </h2>\n            </div>\n        </div>\n\n        <div class=\"col-lg-6\">\n            <div class=\"input-group\">\n                <!--<p><a class=\"btn btn-lg btn-primary\" routerLink=\"№\" role=\"button\">SORT JOBS BY TITLE</a></p>-->\n                <button (click)=\"sortJobs\" class=\"btn btn-lg btn-warning\" type=\"button\">SORT JOBS BY TITLE</button>\n            </div>\n        </div>\n        <br>\n        <div class=\"col-lg-6\">\n            <div class=\"input-group\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\n                <span class=\"input-group-btn\">\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\n                </span>\n            </div>\n        </div>\n        <br> <br>\n        <div class=\"col-lg-12 center\">\n            <ul>\n                <li>\n                    <div id=\"picture-container\" *ngFor=\"let job of this.jobs;\" class=\"col-sm-3\">\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\n                        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" alt=\"Image\">\n                    </a>\n                    </div>\n                </li>\n            </ul>\n        </div>\n    </div>\n    <br>\n    <div *ngFor=\"let page of this.pages;\">\n        <a routerLink=\"/jobs/{{page}}\">{{page}} </a>\n    </div>    \n    <div class=\"row\">\n        <div class=\"col-lg-12 text-center\">\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\n        </div>\n    </div>\n</div>\n<br><br>\n<br>"
 
 /***/ },
 
@@ -1956,7 +1968,7 @@ module.exports = "<div class=\"container\">\n    <div class=\"jumbotron\">\n    
 /***/ 717:
 /***/ function(module, exports) {
 
-module.exports = "<footer class=\"container-fluid text-center navbar-fixed-bottom\">\n    <ul class=\"ul-footer\">\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/how-to-use\">How to use it</a><span>|</span></li>\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/about-us\">About the App</a><span>|</span></li>\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/teen-jobs\">Teen Jobs</a><span>|</span></li>\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/parent-guide\">Parent helper</a><span></span></li>\n        <li class=\"footer-link copyright\"><strong>TEEN@home</strong></li>\n    </ul>\n</footer>"
+module.exports = "<footer class=\"container-fluid text-center navbar-fixed-bottom\">\n    <ul class=\"ul-footer\">\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/how-to-use\">How to use it</a><span>|</span></li>\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/about-us\">About the App</a><span>|</span></li>\n        <li class=\"footer-link copyright\"><strong>TEEN@home</strong></li>\n    </ul>\n</footer>"
 
 /***/ },
 
@@ -1991,7 +2003,7 @@ module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\n    <d
 /***/ 722:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <h2>CREATE NEW ACCOUNT</h2>\n    <hr>\n    <form class=\"form-horizontal\" #registerForm=\"ngForm\" (ngSubmit)=\"add();\">\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">First Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"firstName\" placeholder=\"First Name\" name=\"firstName\" [(ngModel)]=\"model.firstName\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">Last Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"lastName\" placeholder=\"Last Name\" name=\"lastName\" [(ngModel)]=\"model.lastName\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">User Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"userName\" placeholder=\"User Name\" name=\"username\" [(ngModel)]=\"model.username\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">Email:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\" [(ngModel)]=\"model.email\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Password:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" name=\"password\" [(ngModel)]=\"model.password\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Avatar:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"avatar\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter avatar URL (optional)\" name=\"profilePictureUrl\" [(ngModel)]=\"model.profilePictureUrl\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Category:</label>\n            <div class=\"col-sm-10\">\n                <!--<select id=\"category-register\" name=\"category\" required=\"true\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Category'\" class=\"form-control\">\n                    <option value=\"male\">child</option>\n                    <option value=\"female\">parent</option>\n                </select>-->\n                <label class=\"radio-inline\">\n                    <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio1\" value=\"parent\" name=\"role\" [(ngModel)]=\"model.role\"> <span> PARENT</span>\n                </label>\n                <label class=\"radio-inline\">\n                    <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio2\" value=\"child\" name=\"role\" [(ngModel)]=\"model.role\"> <span> CHILD</span>\n                </label>\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <div class=\"col-sm-offset-2 col-sm-10\">\n                <button type=\"submit\" class=\"btn btn-primary\">SUBMIT</button>\n            </div>\n        </div>\n    </form>\n</div>\n<br>"
+module.exports = "<div class=\"container\">\n    <h2>CREATE NEW ACCOUNT</h2>\n    <hr>\n    <form class=\"form-horizontal\" #registerForm=\"ngForm\" (ngSubmit)=\"add();\">\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">First Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"firstName\" placeholder=\"First Name\" name=\"firstName\" [(ngModel)]=\"model.firstName\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">Last Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"lastName\" placeholder=\"Last Name\" name=\"lastName\" [(ngModel)]=\"model.lastName\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">User Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"userName\" placeholder=\"User Name\" name=\"username\" [(ngModel)]=\"model.username\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">Email:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\" [(ngModel)]=\"model.email\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Password:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" name=\"password\" [(ngModel)]=\"model.password\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Avatar:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"avatar\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter avatar URL (optional)\" name=\"profilePictureUrl\" [(ngModel)]=\"model.profilePictureUrl\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <div class=\"col-sm-offset-2 col-sm-10\">\n                <button type=\"submit\" class=\"btn btn-primary\">SUBMIT</button>\n            </div>\n        </div>\n    </form>\n</div>\n<br>"
 
 /***/ },
 
