@@ -10,7 +10,6 @@ import { NotLoggedInGuard } from './services/not.logged.in.guard';
 import { MyProfileComponent } from './components/private/my-profile/my-profile.component';
 import { UpdateInfoComponent } from './components/private/update-info/update-info.component';
 import { JobsComponent } from './components/private/jobs/jobs.component';
-import { MyGroupComponent } from './components/private/my-group/my-group.component';
 import { SingleJobComponent } from './components/private/single-job/single-job.component';
 import { AddJobComponent } from './components/private/add-job/add-job.component';
 import { DonateComponent } from './components/public/donate/donate.component';
@@ -58,11 +57,6 @@ const routes: Routes = [
     canActivate: [NotLoggedInGuard]
   },
   {
-    "path": 'my-group',
-    component: MyGroupComponent,
-    canActivate: [NotLoggedInGuard]
-  },
-  {
     "path": 'jobs/:page',
     component: JobsComponent,
     canActivate: [NotLoggedInGuard]
@@ -95,4 +89,4 @@ const routes: Routes = [
 
 export class AppRoutingModule { }
 
-export const routedComponents = [ RegisterComponent, LoginComponent, HowToUseComponent, AboutUsComponent, HomeComponent, FooterComponent, MyProfileComponent, UpdateInfoComponent, MyGroupComponent, JobsComponent, SingleJobComponent, AddJobComponent, DonateComponent, AddTaskComponent ];
+export const routedComponents = [ RegisterComponent, LoginComponent, HowToUseComponent, AboutUsComponent, HomeComponent, FooterComponent, MyProfileComponent, UpdateInfoComponent, JobsComponent, SingleJobComponent, AddJobComponent, DonateComponent, AddTaskComponent ];

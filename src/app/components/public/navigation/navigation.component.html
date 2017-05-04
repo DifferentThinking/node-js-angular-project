@@ -15,7 +15,6 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
 
-                <li *ngIf="isLoggedIn()"><a routerLink="/my-group"><span class="glyphicon glyphicon-globe"></span> MY GROUP</a></li>
                 <li *ngIf="isLoggedIn()"><a routerLink="/jobs/1"><span class="glyphicon glyphicon-equalizer"></span> JOBS</a></li>
                 <li *ngIf="isLoggedIn()"><a routerLink="/my-profile"><span class="glyphicon glyphicon-user"></span> MY PROFILE</a></li>
                 <li *ngIf="isLoggedIn()"><a (click)="logout()" routerLink="/home"><span class="glyphicon glyphicon-log-out"></span> LOGOUT</a></li>

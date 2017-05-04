@@ -14,7 +14,6 @@ import { FooterComponent } from './components/public/footer/footer.component';
 import { MyProfileComponent } from './components/private/my-profile/my-profile.component';
 import { UpdateInfoComponent } from './components/private/update-info/update-info.component';
 import { JobsComponent } from './components/private/jobs/jobs.component';
-import { MyGroupComponent } from './components/private/my-group/my-group.component';
 import { SingleJobComponent } from './components/private/single-job/single-job.component';
 import { AddJobComponent } from './components/private/add-job/add-job.component';
 import { DonateComponent } from './components/public/donate/donate.component';
@@ -46,7 +45,6 @@ import { HightlightItemDirective } from './directives/hightlight-item.directive'
     MyProfileComponent,
     UpdateInfoComponent,
     JobsComponent,
-    MyGroupComponent,
     SingleJobComponent,
     AddJobComponent,
     DonateComponent,
