@@ -1,0 +1,32 @@
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px
+}
+
+.helpguide {
+    text-decoration: underline;
+    margin-top: 20px
+}
+
+.link {
+    background-color: royalblue;
+    padding: 10px
+}
+
+.link a {
+    color: white;
+}
+
+.drug-abuse {
+    text-decoration: underline;
+    color: royalblue
+}
+
+.container {
+    margin-top: 50px
+}

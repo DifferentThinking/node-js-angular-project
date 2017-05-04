@@ -1,0 +1,54 @@
+img {
+    margin-left: 20%;
+}
+
+.container {
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+#members {
+    margin-top: -10px;
+}
+
+.link {
+    color: white;
+    background-color: royalblue;
+    padding: 10px
+}
+
+.important {
+    border-radius: unset;
+}
+
+.important-box {
+    border: 2px solid darkslategrey;
+    padding: 10px
+}
+
+.right {
+    float: right;
+    margin-top: 20px
+}
+
+.container {
+    margin-top: 50px
+}
+
+img {
+    max-width: 200px;
+    height: auto
+}
+
+.submit {
+    margin-left: -58px;
+    margin-top: 5px;
+}
+
+#childName {
+    margin-left: -15px;
+}
+
+#Avatar {
+    margin-left: -15px;
+}
