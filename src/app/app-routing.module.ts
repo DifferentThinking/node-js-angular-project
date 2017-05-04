@@ -63,12 +63,12 @@ const routes: Routes = [
     canActivate: [NotLoggedInGuard]
   },
   {
-    "path": 'jobs',
+    "path": 'jobs/:page',
     component: JobsComponent,
     canActivate: [NotLoggedInGuard]
   },
   {
-    "path": 'jobs/:id',
+    "path": 'jobs/single-job/:id',
     component: SingleJobComponent,
     canActivate: [NotLoggedInGuard]
   },

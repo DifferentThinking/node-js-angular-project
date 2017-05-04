@@ -1044,12 +1044,12 @@ var routes = [
         canActivate: [__WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__["a" /* NotLoggedInGuard */]]
     },
     {
-        "path": 'jobs',
+        "path": 'jobs/:page',
         component: __WEBPACK_IMPORTED_MODULE_10__components_private_jobs_jobs_component__["a" /* JobsComponent */],
         canActivate: [__WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__["a" /* NotLoggedInGuard */]]
     },
     {
-        "path": 'jobs/:id',
+        "path": 'jobs/single-job/:id',
         component: __WEBPACK_IMPORTED_MODULE_12__components_private_single_job_single_job_component__["a" /* SingleJobComponent */],
         canActivate: [__WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__["a" /* NotLoggedInGuard */]]
     },
