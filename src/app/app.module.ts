@@ -33,6 +33,8 @@ import { FilterByRolePipe } from './pipes/filter-by-role.pipe';
 
 import { HightlightItemDirective } from './directives/hightlight-item.directive';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +63,7 @@ import { HightlightItemDirective } from './directives/hightlight-item.directive'
     HttpModule,
     AppRoutingModule
   ],
-  providers: [UsersService, AuthenticationService, LoggedInGuard, NotLoggedInGuard, JobsService, GroupsService],
+  providers: [UsersService, AuthenticationService, LoggedInGuard, NotLoggedInGuard, JobsService, GroupsService, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,11 +1,11 @@
 webpackJsonp([0,3],{
 
-/***/ 106:
+/***/ 107:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
@@ -106,7 +106,7 @@ var User = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
@@ -174,7 +174,7 @@ var JobsService = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(78);
@@ -387,7 +387,7 @@ var JobsComponent = (function () {
                     _this.pages.push(pageNumber);
                 }
             }
-            var page = _this.route.params['_value'].page;
+            var page = 1;
             _this.jobs = [];
             for (var i = (page * 8) - 8; i < (page * 8); i += 1) {
                 var job = result[i];
@@ -397,9 +397,10 @@ var JobsComponent = (function () {
             }
         });
     };
-    JobsComponent.prototype.changePage = function () {
-        var page = this.route.params['_value'].page;
+    JobsComponent.prototype.changePage = function (page) {
+        console.log("ASD");
         console.log(page);
+        page = +page;
         this.jobs = [];
         for (var i = (page * 8) - 8; i < (page * 8); i += 1) {
             var job = this.allJobs[i];
@@ -775,7 +776,7 @@ var HowToUseComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return GroupsService; });
@@ -822,7 +823,7 @@ var GroupsService = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(107);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LoggedInGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -858,7 +859,7 @@ var LoggedInGuard = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(107);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NotLoggedInGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1014,7 +1015,7 @@ var routes = [
         canActivate: [__WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__["a" /* NotLoggedInGuard */]]
     },
     {
-        "path": 'jobs/:page',
+        "path": 'jobs',
         component: __WEBPACK_IMPORTED_MODULE_10__components_private_jobs_jobs_component__["a" /* JobsComponent */],
         canActivate: [__WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__["a" /* NotLoggedInGuard */]]
     },
@@ -1097,7 +1098,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(483);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(522);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(523);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_public_navigation_navigation_component__ = __webpack_require__(526);
@@ -1117,12 +1118,13 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_logged_in_guard__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_not_logged_in_guard__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_users_service__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_authentication_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_authentication_service__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pipes_sort_pipe__ = __webpack_require__(533);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pipes_capitalize_pipe__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pipes_remove_spaces_pipe__ = __webpack_require__(532);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pipes_filter_by_role_pipe__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__directives_hightlight_item_directive__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__angular_common__ = __webpack_require__(84);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1133,6 +1135,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1194,7 +1197,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["d" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_4__app_routing_module__["b" /* AppRoutingModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_22__services_users_service__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_23__services_authentication_service__["a" /* AuthenticationService */], __WEBPACK_IMPORTED_MODULE_20__services_logged_in_guard__["a" /* LoggedInGuard */], __WEBPACK_IMPORTED_MODULE_21__services_not_logged_in_guard__["a" /* NotLoggedInGuard */], __WEBPACK_IMPORTED_MODULE_19__services_jobs_service__["a" /* JobsService */], __WEBPACK_IMPORTED_MODULE_18__services_groups_service__["a" /* GroupsService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_22__services_users_service__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_23__services_authentication_service__["a" /* AuthenticationService */], __WEBPACK_IMPORTED_MODULE_20__services_logged_in_guard__["a" /* LoggedInGuard */], __WEBPACK_IMPORTED_MODULE_21__services_not_logged_in_guard__["a" /* NotLoggedInGuard */], __WEBPACK_IMPORTED_MODULE_19__services_jobs_service__["a" /* JobsService */], __WEBPACK_IMPORTED_MODULE_18__services_groups_service__["a" /* GroupsService */], { provide: __WEBPACK_IMPORTED_MODULE_29__angular_common__["c" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_29__angular_common__["f" /* HashLocationStrategy */] }],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])
@@ -1210,7 +1213,7 @@ var AppModule = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user__ = __webpack_require__(153);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1255,7 +1258,7 @@ var LoginComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(107);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NavigationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1879,7 +1882,7 @@ module.exports = "<div class=\"container\">\r\n    <h2>ADD NEW TASK</h2>\r\n    
 /***/ 708:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"container-fluid bg-3 text-center\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 center\">\r\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\r\n                </h2>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <!--<p><a class=\"btn btn-lg btn-primary\" routerLink=\"№\" role=\"button\">SORT JOBS BY TITLE</a></p>-->\r\n                <button (click)=\"sortJobs\" class=\"btn btn-lg btn-warning\" type=\"button\">SORT JOBS BY TITLE</button>\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\r\n                </span>\r\n            </div>\r\n        </div>\r\n        <br> <br>\r\n        <div class=\"col-lg-12 center\">\r\n            <ul>\r\n                <li>\r\n                    <div id=\"picture-container\" *ngFor=\"let job of ngthis.jobs;\" class=\"col-sm-3\">\r\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\r\n                        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" alt=\"Image\">\r\n                    </a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"text-center\">\r\n        <a *ngFor=\"let page of this.pages;\" routerLink=\"/jobs/{{page}}\" (click)=\"changePage()\">{{page}} </a>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"container-fluid bg-3 text-center\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 center\">\r\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\r\n                </h2>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <!--<p><a class=\"btn btn-lg btn-primary\" routerLink=\"№\" role=\"button\">SORT JOBS BY TITLE</a></p>-->\r\n                <button (click)=\"sortJobs\" class=\"btn btn-lg btn-warning\" type=\"button\">SORT JOBS BY TITLE</button>\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\r\n                </span>\r\n            </div>\r\n        </div>\r\n        <br> <br>\r\n        <div class=\"col-lg-12 center\">\r\n            <ul>\r\n                <li>\r\n                    <div id=\"picture-container\" *ngFor=\"let job of this.jobs;\" class=\"col-sm-3\">\r\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\r\n                        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" alt=\"Image\">\r\n                    </a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"text-center\">\r\n        <a *ngFor=\"let page of this.pages;\" routerLink=\"/jobs\" (click)=\"changePage(page)\">{{page}} </a>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
 
 /***/ },
 
@@ -1949,7 +1952,7 @@ module.exports = "<div class=\"container\">\r\n    <h2>LOGIN</h2>\r\n    <hr>\r\
 /***/ 718:
 /***/ function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/home\"><img class=\"logo\" src=\"./../../../../Resources/logo.PNG\"> </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li><a routerLink=\"/how-to-use\">HOW TO USE IT</a></li>\r\n                <li><a routerLink=\"/about-us\">ABOUT THE APP</a></li>\r\n            </ul>\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n\r\n                <li *ngIf=\"isLoggedIn()\"><a routerLink=\"/jobs/1\"><span class=\"glyphicon glyphicon-equalizer\"></span> JOBS</a></li>\r\n                <li *ngIf=\"isLoggedIn()\"><a routerLink=\"/my-profile\"><span class=\"glyphicon glyphicon-user\"></span> MY PROFILE</a></li>\r\n                <li *ngIf=\"isLoggedIn()\"><a (click)=\"logout()\" routerLink=\"/home\"><span class=\"glyphicon glyphicon-log-out\"></span> LOGOUT</a></li>\r\n                <li *ngIf=\"!isLoggedIn()\"><a routerLink=\"/login\"><span class=\"glyphicon glyphicon-log-in\" ></span> LOGIN</a></li>\r\n                <li *ngIf=\"!isLoggedIn()\"><a routerLink=\"/register\"><span class=\"glyphicon glyphicon-lock\"></span> REGISTER</a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>"
+module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/home\"><img class=\"logo\" src=\"./../../../../Resources/logo.PNG\"> </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li><a routerLink=\"/how-to-use\">HOW TO USE IT</a></li>\r\n                <li><a routerLink=\"/about-us\">ABOUT THE APP</a></li>\r\n            </ul>\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n\r\n                <li *ngIf=\"isLoggedIn()\"><a routerLink=\"/jobs\"><span class=\"glyphicon glyphicon-equalizer\"></span> JOBS</a></li>\r\n                <li *ngIf=\"isLoggedIn()\"><a routerLink=\"/my-profile\"><span class=\"glyphicon glyphicon-user\"></span> MY PROFILE</a></li>\r\n                <li *ngIf=\"isLoggedIn()\"><a (click)=\"logout()\" routerLink=\"/home\"><span class=\"glyphicon glyphicon-log-out\"></span> LOGOUT</a></li>\r\n                <li *ngIf=\"!isLoggedIn()\"><a routerLink=\"/login\"><span class=\"glyphicon glyphicon-log-in\" ></span> LOGIN</a></li>\r\n                <li *ngIf=\"!isLoggedIn()\"><a routerLink=\"/register\"><span class=\"glyphicon glyphicon-lock\"></span> REGISTER</a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>"
 
 /***/ },
 

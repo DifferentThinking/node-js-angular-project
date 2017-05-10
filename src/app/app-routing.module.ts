@@ -57,7 +57,7 @@ const routes: Routes = [
     canActivate: [NotLoggedInGuard]
   },
   {
-    "path": 'jobs/:page',
+    "path": 'jobs',
     component: JobsComponent,
     canActivate: [NotLoggedInGuard]
   },

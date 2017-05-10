@@ -29,7 +29,7 @@ export class JobsComponent implements OnInit {
           }
         }
 
-        let page = this.route.params['_value'].page;
+        let page = 1;
         this.jobs = [];
         for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
           let job = result[i];
@@ -41,9 +41,10 @@ export class JobsComponent implements OnInit {
       });    
   }
 
-  changePage(): void {
-    let page = this.route.params['_value'].page;
+  changePage(page: number): void {
+    console.log("ASD");
     console.log(page);
+    page = +page;
     this.jobs = [];
     for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
       let job = this.allJobs[i];
