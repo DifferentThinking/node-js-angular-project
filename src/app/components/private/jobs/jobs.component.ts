@@ -2,7 +2,7 @@ import { Component, OnInit, OnChanges, SimpleChange } from '@angular/core';
 
 import { Job } from './../../../models/job';
 import { JobsService } from './../../../services/jobs.service'; 
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-jobs',
@@ -14,7 +14,12 @@ export class JobsComponent implements OnInit, OnChanges {
   private pages: number[] = [];
   private allJobs = [];
 
-  constructor(private jobsService: JobsService, private route: ActivatedRoute) { }
+  constructor(private jobsService: JobsService, private route: ActivatedRoute, private router: Router) {
+    router.events.subscribe((val) => {
+        console.log("CHAGNE");
+        
+    });
+  }
 
   ngOnChanges(changes: { [propName: string]: SimpleChange }) :void {
     console.log("ASDASD");
