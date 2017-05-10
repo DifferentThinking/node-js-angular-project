@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Job } from './../../../models/job';
 import { JobsService } from './../../../services/jobs.service'; 
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-jobs',
@@ -14,18 +14,7 @@ export class JobsComponent implements OnInit {
   private pages: number[] = [];
   private allJobs = [];
 
-  constructor(private jobsService: JobsService, private route: ActivatedRoute, private router: Router) {
-    router.events.subscribe((val) => {
-      let page = this.route.params['_value'].page;
-      this.jobs = [];
-      for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
-        let job = this.allJobs[i];
-        let currentJob: Job = new Job(job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
-        currentJob.id = job._id;
-
-        this.jobs.push(currentJob);
-      }
-    });
+  constructor(private jobsService: JobsService, private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
@@ -50,6 +39,19 @@ export class JobsComponent implements OnInit {
           this.jobs.push(currentJob);
         }
       });    
+  }
+
+  changePage(): void {
+    let page = this.route.params['_value'].page;
+    console.log(page);
+    this.jobs = [];
+    for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
+      let job = this.allJobs[i];
+      let currentJob: Job = new Job(job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
+      currentJob.id = job._id;
+
+      this.jobs.push(currentJob);
+    }
   }
 
   getAllJobs(): any {

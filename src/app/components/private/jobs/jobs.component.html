@@ -26,7 +26,7 @@
         <div class="col-lg-12 center">
             <ul>
                 <li>
-                    <div id="picture-container" *ngFor="let job of this.jobs;" class="col-sm-3">
+                    <div id="picture-container" *ngFor="let job of ngthis.jobs;" class="col-sm-3">
                         <a routerLink="/jobs/single-job/{{job.id}}"> {{job.title | uppercase}}
                         <img src="{{job.pictureUrl}}" class="img-responsive img-thumbnail" alt="Image">
                     </a>
@@ -37,7 +37,7 @@
     </div>
     <br>
     <div class="text-center">
-        <a *ngFor="let page of this.pages;" routerLink="/jobs/{{page}}">{{page}} </a>    
+        <a *ngFor="let page of this.pages;" routerLink="/jobs/{{page}}" (click)="changePage()">{{page}} </a>    
     </div>
     <div class="row">
         <div class="col-lg-12 text-center">

@@ -368,24 +368,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var JobsComponent = (function () {
-    function JobsComponent(jobsService, route, router) {
-        var _this = this;
+    function JobsComponent(jobsService, route) {
         this.jobsService = jobsService;
         this.route = route;
-        this.router = router;
         this.jobs = [];
         this.pages = [];
         this.allJobs = [];
-        router.events.subscribe(function (val) {
-            var page = _this.route.params['_value'].page;
-            _this.jobs = [];
-            for (var i = (page * 8) - 8; i < (page * 8); i += 1) {
-                var job = _this.allJobs[i];
-                var currentJob = new __WEBPACK_IMPORTED_MODULE_1__models_job__["a" /* Job */](job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
-                currentJob.id = job._id;
-                _this.jobs.push(currentJob);
-            }
-        });
     }
     JobsComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -409,6 +397,17 @@ var JobsComponent = (function () {
             }
         });
     };
+    JobsComponent.prototype.changePage = function () {
+        var page = this.route.params['_value'].page;
+        console.log(page);
+        this.jobs = [];
+        for (var i = (page * 8) - 8; i < (page * 8); i += 1) {
+            var job = this.allJobs[i];
+            var currentJob = new __WEBPACK_IMPORTED_MODULE_1__models_job__["a" /* Job */](job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
+            currentJob.id = job._id;
+            this.jobs.push(currentJob);
+        }
+    };
     JobsComponent.prototype.getAllJobs = function () {
         return this.jobsService.getAllJobs();
     };
@@ -428,10 +427,10 @@ var JobsComponent = (function () {
             template: __webpack_require__(708),
             styles: [__webpack_require__(693)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], JobsComponent);
     return JobsComponent;
-    var _a, _b, _c;
+    var _a, _b;
 }());
 //# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/jobs.component.js.map
 
@@ -1880,7 +1879,7 @@ module.exports = "<div class=\"container\">\r\n    <h2>ADD NEW TASK</h2>\r\n    
 /***/ 708:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"container-fluid bg-3 text-center\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 center\">\r\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\r\n                </h2>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <!--<p><a class=\"btn btn-lg btn-primary\" routerLink=\"№\" role=\"button\">SORT JOBS BY TITLE</a></p>-->\r\n                <button (click)=\"sortJobs\" class=\"btn btn-lg btn-warning\" type=\"button\">SORT JOBS BY TITLE</button>\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\r\n                </span>\r\n            </div>\r\n        </div>\r\n        <br> <br>\r\n        <div class=\"col-lg-12 center\">\r\n            <ul>\r\n                <li>\r\n                    <div id=\"picture-container\" *ngFor=\"let job of this.jobs;\" class=\"col-sm-3\">\r\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\r\n                        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" alt=\"Image\">\r\n                    </a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"text-center\">\r\n        <a *ngFor=\"let page of this.pages;\" routerLink=\"/jobs/{{page}}\">{{page}} </a>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"container-fluid bg-3 text-center\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 center\">\r\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\r\n                </h2>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <!--<p><a class=\"btn btn-lg btn-primary\" routerLink=\"№\" role=\"button\">SORT JOBS BY TITLE</a></p>-->\r\n                <button (click)=\"sortJobs\" class=\"btn btn-lg btn-warning\" type=\"button\">SORT JOBS BY TITLE</button>\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\r\n                </span>\r\n            </div>\r\n        </div>\r\n        <br> <br>\r\n        <div class=\"col-lg-12 center\">\r\n            <ul>\r\n                <li>\r\n                    <div id=\"picture-container\" *ngFor=\"let job of ngthis.jobs;\" class=\"col-sm-3\">\r\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\r\n                        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" alt=\"Image\">\r\n                    </a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"text-center\">\r\n        <a *ngFor=\"let page of this.pages;\" routerLink=\"/jobs/{{page}}\" (click)=\"changePage()\">{{page}} </a>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
 
 /***/ },
 
