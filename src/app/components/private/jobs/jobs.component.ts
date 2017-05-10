@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, SimpleChange } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Job } from './../../../models/job';
 import { JobsService } from './../../../services/jobs.service'; 
@@ -9,33 +9,26 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   templateUrl: './jobs.component.html',
   styleUrls: ['./jobs.component.css']
 })
-export class JobsComponent implements OnInit, OnChanges {
+export class JobsComponent implements OnInit {
   private jobs: Job[] = [];
   private pages: number[] = [];
   private allJobs = [];
 
   constructor(private jobsService: JobsService, private route: ActivatedRoute, private router: Router) {
     router.events.subscribe((val) => {
-        console.log("CHAGNE");
-        
+      let page = this.route.params['_value'].page;
+      this.jobs = [];
+      for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
+        let job = this.allJobs[i];
+        let currentJob: Job = new Job(job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
+        currentJob.id = job._id;
+
+        this.jobs.push(currentJob);
+      }
     });
   }
 
-  ngOnChanges(changes: { [propName: string]: SimpleChange }) :void {
-    console.log("ASDASD");
-    let page = this.route.params['_value'].page;
-    this.jobs = [];
-    for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
-      let job = this.allJobs[i];
-      let currentJob: Job = new Job(job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
-      currentJob.id = job._id;
-
-      this.jobs.push(currentJob);
-    }
-  }
-
   ngOnInit(): void {
-    console.log("ASDASD1");
     this.getAllJobs()
       .then(result => {
         this.allJobs = result;

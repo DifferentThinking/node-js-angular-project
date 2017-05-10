@@ -369,6 +369,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var JobsComponent = (function () {
     function JobsComponent(jobsService, route, router) {
+        var _this = this;
         this.jobsService = jobsService;
         this.route = route;
         this.router = router;
@@ -376,23 +377,18 @@ var JobsComponent = (function () {
         this.pages = [];
         this.allJobs = [];
         router.events.subscribe(function (val) {
-            console.log("CHAGNE");
+            var page = _this.route.params['_value'].page;
+            _this.jobs = [];
+            for (var i = (page * 8) - 8; i < (page * 8); i += 1) {
+                var job = _this.allJobs[i];
+                var currentJob = new __WEBPACK_IMPORTED_MODULE_1__models_job__["a" /* Job */](job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
+                currentJob.id = job._id;
+                _this.jobs.push(currentJob);
+            }
         });
     }
-    JobsComponent.prototype.ngOnChanges = function (changes) {
-        console.log("ASDASD");
-        var page = this.route.params['_value'].page;
-        this.jobs = [];
-        for (var i = (page * 8) - 8; i < (page * 8); i += 1) {
-            var job = this.allJobs[i];
-            var currentJob = new __WEBPACK_IMPORTED_MODULE_1__models_job__["a" /* Job */](job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
-            currentJob.id = job._id;
-            this.jobs.push(currentJob);
-        }
-    };
     JobsComponent.prototype.ngOnInit = function () {
         var _this = this;
-        console.log("ASDASD1");
         this.getAllJobs()
             .then(function (result) {
             _this.allJobs = result;
