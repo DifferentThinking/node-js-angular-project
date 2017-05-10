@@ -98,6 +98,17 @@ apiRouter
 			});
 		});
 	})
+	.post('/jobs/delete/:id', function(req, res, next) {
+		let id = req.params.id;
+
+		db['jobs'].remove({ _id: new ObjectId(id) }, function(err, deletedJob) {
+			if (err) {
+				return res.status(400).josn({ "error": "Error in DB" });
+			}
+
+			return res.status(200).json(deletedJob);
+		})
+	})
 	.get('/jobs', function(req, res, next) {
 		db['jobs'].find({}, function(err, jobs) {
 			if (err) {

@@ -32,4 +32,9 @@ export class SingleJobComponent implements OnInit {
     this.job.author = job.author;
     this.job.pictureUrl = job.pictureUrl;
   } 
+
+  deleteJob(): void{
+    console.log('called deleteJob');
+    this.jobsService.deleteJobById(this.route.params['_value'].id);
+  }
 }

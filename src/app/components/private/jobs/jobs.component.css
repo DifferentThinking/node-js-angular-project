@@ -24,3 +24,8 @@ ul {
 li {
     display: inline-block;
 }
+
+.picture-list {
+    width: 250px;
+    height: 150px;
+}

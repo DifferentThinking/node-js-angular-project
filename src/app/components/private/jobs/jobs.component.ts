@@ -23,7 +23,7 @@ export class JobsComponent implements OnInit {
         this.allJobs = result;
         let pageNumber = 0;
         for (let i: number = 0; i < result.length; i += 1) {
-          if (i % 7 === 0) {
+          if (i % 8 === 0) {
             pageNumber += 1;
             this.pages.push(pageNumber);
           }
@@ -57,17 +57,5 @@ export class JobsComponent implements OnInit {
 
   getAllJobs(): any {
     return this.jobsService.getAllJobs(); 
-  }
-
-  compareJobs(leftJob, rightJob): number {
-    if (leftJob.title < rightJob.title)
-      return -1;
-    if (leftJob.title > rightJob.title)
-      return 1;
-    return 0;
-  }
-
-  sortJobs(): void {
-    this.jobs.sort(this.compareJobs);
   }
 }

@@ -141,7 +141,7 @@ var JobsService = (function () {
             alert("You have created job successfully.");
             response.json().data;
         })
-            .catch(function (er) { return alert(JSON.parse(er._body).error); });
+            .catch(function (err) { return alert(JSON.parse(err._body).error); });
     };
     JobsService.prototype.getAllJobs = function () {
         return this.http
@@ -157,6 +157,19 @@ var JobsService = (function () {
             return response.json();
         })
             .catch(function (er) { return alert(JSON.parse(er._body).error); });
+    };
+    JobsService.prototype.deleteJobById = function (id) {
+        var _this = this;
+        return this.http
+            .post('/api/jobs/delete/' + id, {}, this.options)
+            .toPromise()
+            .then(function (response) {
+            console.log("RESPOSNSE");
+            _this.router.navigateByUrl('/jobs');
+            alert("You have deleted job successfully.");
+            return response.json().data;
+        })
+            .catch(function (err) { return alert(JSON.parse(err._body).error); });
     };
     JobsService = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(), 
@@ -382,7 +395,7 @@ var JobsComponent = (function () {
             _this.allJobs = result;
             var pageNumber = 0;
             for (var i = 0; i < result.length; i += 1) {
-                if (i % 7 === 0) {
+                if (i % 8 === 0) {
                     pageNumber += 1;
                     _this.pages.push(pageNumber);
                 }
@@ -411,16 +424,6 @@ var JobsComponent = (function () {
     };
     JobsComponent.prototype.getAllJobs = function () {
         return this.jobsService.getAllJobs();
-    };
-    JobsComponent.prototype.compareJobs = function (leftJob, rightJob) {
-        if (leftJob.title < rightJob.title)
-            return -1;
-        if (leftJob.title > rightJob.title)
-            return 1;
-        return 0;
-    };
-    JobsComponent.prototype.sortJobs = function () {
-        this.jobs.sort(this.compareJobs);
     };
     JobsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
@@ -533,6 +536,10 @@ var SingleJobComponent = (function () {
         this.job.description = job.description;
         this.job.author = job.author;
         this.job.pictureUrl = job.pictureUrl;
+    };
+    SingleJobComponent.prototype.deleteJob = function () {
+        console.log('called deleteJob');
+        this.jobsService.deleteJobById(this.route.params['_value'].id);
     };
     SingleJobComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
@@ -1777,7 +1784,7 @@ module.exports = "h2 {\r\n    text-align: center;\r\n    margin-bottom: 30px;\r\
 /***/ 693:
 /***/ function(module, exports) {
 
-module.exports = ".form-actions {\r\n    margin: 0;\r\n    background-color: transparent;\r\n    text-align: center;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}\r\n\r\nimg {\r\n    max-width: 250px;\r\n    max-height: 150px;\r\n    /*\r\n    max-width: 100%;\r\n    height: auto */\r\n}\r\n\r\nul {\r\n    list-style-type: none;\r\n    display: block;\r\n}\r\n\r\nli {\r\n    display: inline-block;\r\n}"
+module.exports = ".form-actions {\r\n    margin: 0;\r\n    background-color: transparent;\r\n    text-align: center;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}\r\n\r\nimg {\r\n    max-width: 250px;\r\n    max-height: 150px;\r\n    /*\r\n    max-width: 100%;\r\n    height: auto */\r\n}\r\n\r\nul {\r\n    list-style-type: none;\r\n    display: block;\r\n}\r\n\r\nli {\r\n    display: inline-block;\r\n}\r\n\r\n.picture-list {\r\n    width: 250px;\r\n    height: 150px;\r\n}"
 
 /***/ },
 
@@ -1882,7 +1889,7 @@ module.exports = "<div class=\"container\">\r\n    <h2>ADD NEW TASK</h2>\r\n    
 /***/ 708:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"container-fluid bg-3 text-center\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 center\">\r\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\r\n                </h2>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <!--<p><a class=\"btn btn-lg btn-primary\" routerLink=\"№\" role=\"button\">SORT JOBS BY TITLE</a></p>-->\r\n                <button (click)=\"sortJobs\" class=\"btn btn-lg btn-warning\" type=\"button\">SORT JOBS BY TITLE</button>\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\r\n                </span>\r\n            </div>\r\n        </div>\r\n        <br> <br>\r\n        <div class=\"col-lg-12 center\">\r\n            <ul>\r\n                <li>\r\n                    <div id=\"picture-container\" *ngFor=\"let job of this.jobs;\" class=\"col-sm-3\">\r\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\r\n                        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" alt=\"Image\">\r\n                    </a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"text-center\">\r\n        <a *ngFor=\"let page of this.pages;\" routerLink=\"/jobs\" (click)=\"changePage(page)\">{{page}} </a>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"container-fluid bg-3 text-center\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 center\">\r\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\r\n                </h2>\r\n            </div>\r\n        </div>\r\n\r\n        <br>\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\r\n                </span>\r\n            </div>\r\n        </div>\r\n        <br> <br> <br> <br>\r\n        <div class=\"col-lg-12 center\">\r\n            <ul>\r\n                <li>\r\n                    <div id=\"picture-container\" *ngFor=\"let job of this.jobs;\" class=\"col-sm-3\">\r\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\r\n                        <img src=\"{{job.pictureUrl}}\" class=\"picture-list img-thumbnail\" alt=\"Image\">\r\n                    </a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"text-center\">\r\n        <a *ngFor=\"let page of this.pages;\" routerLink=\"/jobs\" (click)=\"changePage(page)\">{{page}} </a>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
 
 /***/ },
 
@@ -1896,7 +1903,7 @@ module.exports = "<div class=\"container\">\r\n    <div class=\"row\">\r\n      
 /***/ 710:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h2>{{job.title | uppercase}}</h2>\r\n    <hr>\r\n    <div class=\"col-md-8 col-md-offset-2\">\r\n        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" style=\"width:100%\" alt=\"Image\">\r\n    </div>\r\n\r\n    <div class=\"row marketing\">\r\n        <div class=\"col-md-8 col-md-offset-2\">\r\n            <h4 class=\"important\"><strong>JOB DETAILS</strong></h4>\r\n            <p><strong>Description: </strong> {{job.description}}</p>\r\n            <p><strong>Author: </strong> {{job.author | capitalize}}</p>\r\n            <p><strong>Work Hours: </strong> {{job.workHours}}</p>\r\n            <p><strong>Salary: </strong> {{job.salary | currency:'EUR':true}}</p>\r\n            <p><strong>Date Created: </strong> {{job.dateCreated | date:\"MM/dd/yy\"}}</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br><br>"
+module.exports = "<div class=\"container\">\r\n    <h2>{{job.title | uppercase}}</h2>\r\n    <hr>\r\n    <div class=\"col-md-8 col-md-offset-2\">\r\n        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" style=\"width:100%\" alt=\"Image\">\r\n    </div>\r\n\r\n    <div class=\"row marketing\">\r\n        <div class=\"col-md-8 col-md-offset-2\">\r\n            <h4 class=\"important\"><strong>JOB DETAILS</strong></h4>\r\n            <p><strong>Description: </strong> {{job.description}}</p>\r\n            <p><strong>Author: </strong> {{job.author | capitalize}}</p>\r\n            <p><strong>Work Hours: </strong> {{job.workHours}}</p>\r\n            <p><strong>Salary: </strong> {{job.salary | currency:'EUR':true}}</p>\r\n            <p><strong>Date Created: </strong> {{job.dateCreated | date:\"MM/dd/yy\"}}</p>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" role=\"button\" (click)=\"deleteJob()\">DELETE JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br><br>"
 
 /***/ },
 

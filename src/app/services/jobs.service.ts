@@ -22,7 +22,7 @@ export class JobsService {
                 alert("You have created job successfully.");
                 response.json().data 
             })
-            .catch(er => alert(JSON.parse(er._body).error));
+            .catch(err => alert(JSON.parse(err._body).error));
   }
 
     getAllJobs(): any {
@@ -41,4 +41,17 @@ export class JobsService {
             })
             .catch(er => alert(JSON.parse(er._body).error));
     }
+
+    deleteJobById(id: string): any {
+        return this.http
+            .post('/api/jobs/delete/' + id, {}, this.options)
+            .toPromise()
+            .then(response =>{
+                console.log("RESPOSNSE");
+                this.router.navigateByUrl('/jobs');
+                alert("You have deleted job successfully.");
+                return response.json().data;
+            })
+            .catch(err => alert(JSON.parse(err._body).error));
+    }   
 }
