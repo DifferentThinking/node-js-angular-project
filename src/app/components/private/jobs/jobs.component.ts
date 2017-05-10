@@ -17,6 +17,7 @@ export class JobsComponent implements OnInit, OnChanges {
   constructor(private jobsService: JobsService, private route: ActivatedRoute) { }
 
   ngOnChanges(changes: { [propName: string]: SimpleChange }) :void {
+    console.log("ASDASD");
     let page = this.route.params['_value'].page;
     this.jobs = [];
     for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
@@ -29,6 +30,7 @@ export class JobsComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
+    console.log("ASDASD1");
     this.getAllJobs()
       .then(result => {
         this.allJobs = result;
