@@ -368,12 +368,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var JobsComponent = (function () {
-    function JobsComponent(jobsService, route) {
+    function JobsComponent(jobsService, route, router) {
         this.jobsService = jobsService;
         this.route = route;
+        this.router = router;
         this.jobs = [];
         this.pages = [];
         this.allJobs = [];
+        router.events.subscribe(function (val) {
+            console.log("CHAGNE");
+        });
     }
     JobsComponent.prototype.ngOnChanges = function (changes) {
         console.log("ASDASD");
@@ -428,10 +432,10 @@ var JobsComponent = (function () {
             template: __webpack_require__(708),
             styles: [__webpack_require__(693)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], JobsComponent);
     return JobsComponent;
-    var _a, _b;
+    var _a, _b, _c;
 }());
 //# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/jobs.component.js.map
 
