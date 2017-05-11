@@ -16,10 +16,7 @@ import { UpdateInfoComponent } from './components/private/update-info/update-inf
 import { JobsComponent } from './components/private/jobs/jobs.component';
 import { SingleJobComponent } from './components/private/single-job/single-job.component';
 import { AddJobComponent } from './components/private/add-job/add-job.component';
-import { DonateComponent } from './components/public/donate/donate.component';
-import { AddTaskComponent } from './components/private/add-task/add-task.component';
 
-import { GroupsService } from './services/groups.service';
 import { JobsService } from './services/jobs.service';
 import { LoggedInGuard } from './services/logged.in.guard';
 import { NotLoggedInGuard } from './services/not.logged.in.guard';
@@ -49,8 +46,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     JobsComponent,
     SingleJobComponent,
     AddJobComponent,
-    DonateComponent,
-    AddTaskComponent,
     SortPipe,
     CapitalizePipe,
     RemoveSpacesPipe,
@@ -63,7 +58,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [UsersService, AuthenticationService, LoggedInGuard, NotLoggedInGuard, JobsService, GroupsService, { provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [UsersService, AuthenticationService, LoggedInGuard, NotLoggedInGuard, JobsService, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -11,8 +11,6 @@ import { UpdateInfoComponent } from './components/private/update-info/update-inf
 import { JobsComponent } from './components/private/jobs/jobs.component';
 import { SingleJobComponent } from './components/private/single-job/single-job.component';
 import { AddJobComponent } from './components/private/add-job/add-job.component';
-import { DonateComponent } from './components/public/donate/donate.component';
-import { AddTaskComponent } from './components/private/add-task/add-task.component';
 
 @Component({
   selector: `app-root`,

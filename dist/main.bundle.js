@@ -1,13 +1,13 @@
 webpackJsonp([0,3],{
 
-/***/ 107:
+/***/ 106:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AuthenticationService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -74,7 +74,7 @@ var AuthenticationService = (function () {
     return AuthenticationService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/authentication.service.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/authentication.service.js.map
 
 /***/ },
 
@@ -97,7 +97,7 @@ var User = (function () {
     }
     return User;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/user.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/user.js.map
 
 /***/ },
 
@@ -106,9 +106,9 @@ var User = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return JobsService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -178,7 +178,7 @@ var JobsService = (function () {
     return JobsService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/jobs.service.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/jobs.service.js.map
 
 /***/ },
 
@@ -187,8 +187,8 @@ var JobsService = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(78);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return UsersService; });
@@ -252,11 +252,11 @@ var UsersService = (function () {
     return UsersService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/users.service.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/users.service.js.map
 
 /***/ },
 
-/***/ 222:
+/***/ 221:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -273,7 +273,7 @@ var Job = (function () {
     }
     return Job;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/job.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/job.js.map
 
 /***/ },
 
@@ -283,7 +283,7 @@ var Job = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_jobs_service__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_job__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_job__ = __webpack_require__(221);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AddJobComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -311,15 +311,15 @@ var AddJobComponent = (function () {
     AddJobComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-add-job',
-            template: __webpack_require__(706),
-            styles: [__webpack_require__(691)]
+            template: __webpack_require__(700),
+            styles: [__webpack_require__(687)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object])
     ], AddJobComponent);
     return AddJobComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/add-job.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/add-job.component.js.map
 
 /***/ },
 
@@ -328,42 +328,7 @@ var AddJobComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AddTaskComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var AddTaskComponent = (function () {
-    function AddTaskComponent() {
-    }
-    AddTaskComponent.prototype.ngOnInit = function () {
-    };
-    AddTaskComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
-            selector: 'app-add-task',
-            template: __webpack_require__(707),
-            styles: [__webpack_require__(692)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AddTaskComponent);
-    return AddTaskComponent;
-}());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/add-task.component.js.map
-
-/***/ },
-
-/***/ 338:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_job__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_job__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(78);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return JobsComponent; });
@@ -428,19 +393,19 @@ var JobsComponent = (function () {
     JobsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-jobs',
-            template: __webpack_require__(708),
-            styles: [__webpack_require__(693)]
+            template: __webpack_require__(701),
+            styles: [__webpack_require__(688)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], JobsComponent);
     return JobsComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/jobs.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/jobs.component.js.map
 
 /***/ },
 
-/***/ 339:
+/***/ 338:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -481,26 +446,26 @@ var MyProfileComponent = (function () {
     MyProfileComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-my-profile',
-            template: __webpack_require__(709),
-            styles: [__webpack_require__(694)]
+            template: __webpack_require__(702),
+            styles: [__webpack_require__(689)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */]) === 'function' && _a) || Object])
     ], MyProfileComponent);
     return MyProfileComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/my-profile.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/my-profile.component.js.map
 
 /***/ },
 
-/***/ 340:
+/***/ 339:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_job__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_job__ = __webpack_require__(221);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SingleJobComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -544,19 +509,19 @@ var SingleJobComponent = (function () {
     SingleJobComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-single-job',
-            template: __webpack_require__(710),
-            styles: [__webpack_require__(695)]
+            template: __webpack_require__(703),
+            styles: [__webpack_require__(690)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_jobs_service__["a" /* JobsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], SingleJobComponent);
     return SingleJobComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/single-job.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/single-job.component.js.map
 
 /***/ },
 
-/***/ 341:
+/***/ 340:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -591,19 +556,19 @@ var UpdateInfoComponent = (function () {
     UpdateInfoComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-update-info',
-            template: __webpack_require__(711),
-            styles: [__webpack_require__(696)]
+            template: __webpack_require__(704),
+            styles: [__webpack_require__(691)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */]) === 'function' && _a) || Object])
     ], UpdateInfoComponent);
     return UpdateInfoComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/update-info.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/update-info.component.js.map
 
 /***/ },
 
-/***/ 342:
+/***/ 341:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -627,53 +592,18 @@ var AboutUsComponent = (function () {
     AboutUsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-about-us',
-            template: __webpack_require__(712),
-            styles: [__webpack_require__(697)]
+            template: __webpack_require__(705),
+            styles: [__webpack_require__(692)]
         }), 
         __metadata('design:paramtypes', [])
     ], AboutUsComponent);
     return AboutUsComponent;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/about-us.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/about-us.component.js.map
 
 /***/ },
 
-/***/ 343:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DonateComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var DonateComponent = (function () {
-    function DonateComponent() {
-    }
-    DonateComponent.prototype.ngOnInit = function () {
-    };
-    DonateComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
-            selector: 'app-donate',
-            template: __webpack_require__(713),
-            styles: [__webpack_require__(698)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DonateComponent);
-    return DonateComponent;
-}());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/donate.component.js.map
-
-/***/ },
-
-/***/ 344:
+/***/ 342:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -697,18 +627,18 @@ var FooterComponent = (function () {
     FooterComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-footer',
-            template: __webpack_require__(714),
-            styles: [__webpack_require__(699)]
+            template: __webpack_require__(706),
+            styles: [__webpack_require__(693)]
         }), 
         __metadata('design:paramtypes', [])
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/footer.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/footer.component.js.map
 
 /***/ },
 
-/***/ 345:
+/***/ 343:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -732,18 +662,18 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-home',
-            template: __webpack_require__(715),
-            styles: [__webpack_require__(700)]
+            template: __webpack_require__(707),
+            styles: [__webpack_require__(694)]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/home.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/home.component.js.map
 
 /***/ },
 
-/***/ 346:
+/***/ 344:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -767,70 +697,23 @@ var HowToUseComponent = (function () {
     HowToUseComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-how-to-use',
-            template: __webpack_require__(716),
-            styles: [__webpack_require__(701)]
+            template: __webpack_require__(708),
+            styles: [__webpack_require__(695)]
         }), 
         __metadata('design:paramtypes', [])
     ], HowToUseComponent);
     return HowToUseComponent;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/how-to-use.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/how-to-use.component.js.map
 
 /***/ },
 
-/***/ 347:
+/***/ 345:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return GroupsService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var GroupsService = (function () {
-    function GroupsService(http) {
-        this.http = http;
-        this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json', 'charset': 'UTF-8' });
-        this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: this.headers });
-    }
-    GroupsService.prototype.create = function (group) {
-        return this.http
-            .post('/api/groups', JSON.stringify(group), this.options)
-            .toPromise()
-            .then(function (response) {
-            response.json().data;
-        })
-            .catch(function (er) { return alert(JSON.parse(er._body).error); });
-    };
-    GroupsService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === 'function' && _a) || Object])
-    ], GroupsService);
-    return GroupsService;
-    var _a;
-}());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/groups.service.js.map
-
-/***/ },
-
-/***/ 348:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(106);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LoggedInGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -857,16 +740,16 @@ var LoggedInGuard = (function () {
     return LoggedInGuard;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/logged.in.guard.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/logged.in.guard.js.map
 
 /***/ },
 
-/***/ 349:
+/***/ 346:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(106);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NotLoggedInGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -893,11 +776,11 @@ var NotLoggedInGuard = (function () {
     return NotLoggedInGuard;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/not.logged.in.guard.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/not.logged.in.guard.js.map
 
 /***/ },
 
-/***/ 405:
+/***/ 402:
 /***/ function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -906,21 +789,21 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 405;
+webpackEmptyContext.id = 402;
 
 
 /***/ },
 
-/***/ 406:
+/***/ 403:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(537);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(533);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(492);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(489);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(536);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__(524);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__(521);
 
 
 
@@ -930,31 +813,29 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_41" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/main.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/main.js.map
 
 /***/ },
 
-/***/ 522:
+/***/ 519:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_register_register_component__ = __webpack_require__(527);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_login_login_component__ = __webpack_require__(525);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_public_how_to_use_how_to_use_component__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_public_about_us_about_us_component__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_public_home_home_component__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_private_my_profile_my_profile_component__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_private_update_info_update_info_component__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_private_jobs_jobs_component__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_private_single_job_single_job_component__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_register_register_component__ = __webpack_require__(524);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_login_login_component__ = __webpack_require__(522);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_public_how_to_use_how_to_use_component__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_public_about_us_about_us_component__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_public_home_home_component__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_private_my_profile_my_profile_component__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_private_update_info_update_info_component__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_private_jobs_jobs_component__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_private_single_job_single_job_component__ = __webpack_require__(339);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_private_add_job_add_job_component__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_public_donate_donate_component__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_private_add_task_add_task_component__ = __webpack_require__(337);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_public_footer_footer_component__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_logged_in_guard__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_public_footer_footer_component__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_logged_in_guard__ = __webpack_require__(345);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return AppRoutingModule; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return routedComponents; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -966,8 +847,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
 
 
 
@@ -996,12 +875,12 @@ var routes = [
     {
         "path": 'login',
         component: __WEBPACK_IMPORTED_MODULE_3__components_public_login_login_component__["a" /* LoginComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_16__services_logged_in_guard__["a" /* LoggedInGuard */]]
+        canActivate: [__WEBPACK_IMPORTED_MODULE_14__services_logged_in_guard__["a" /* LoggedInGuard */]]
     },
     {
         "path": 'register',
         component: __WEBPACK_IMPORTED_MODULE_2__components_public_register_register_component__["a" /* RegisterComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_16__services_logged_in_guard__["a" /* LoggedInGuard */]]
+        canActivate: [__WEBPACK_IMPORTED_MODULE_14__services_logged_in_guard__["a" /* LoggedInGuard */]]
     },
     {
         "path": 'how-to-use',
@@ -1036,15 +915,6 @@ var routes = [
         component: __WEBPACK_IMPORTED_MODULE_12__components_private_add_job_add_job_component__["a" /* AddJobComponent */],
         canActivate: [__WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__["a" /* NotLoggedInGuard */]]
     },
-    {
-        "path": 'donate',
-        component: __WEBPACK_IMPORTED_MODULE_13__components_public_donate_donate_component__["a" /* DonateComponent */],
-    },
-    {
-        "path": 'add-task',
-        component: __WEBPACK_IMPORTED_MODULE_14__components_private_add_task_add_task_component__["a" /* AddTaskComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_7__services_not_logged_in_guard__["a" /* NotLoggedInGuard */]]
-    }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -1058,12 +928,12 @@ var AppRoutingModule = (function () {
     ], AppRoutingModule);
     return AppRoutingModule;
 }());
-var routedComponents = [__WEBPACK_IMPORTED_MODULE_2__components_public_register_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_3__components_public_login_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_4__components_public_how_to_use_how_to_use_component__["a" /* HowToUseComponent */], __WEBPACK_IMPORTED_MODULE_5__components_public_about_us_about_us_component__["a" /* AboutUsComponent */], __WEBPACK_IMPORTED_MODULE_6__components_public_home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_15__components_public_footer_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_8__components_private_my_profile_my_profile_component__["a" /* MyProfileComponent */], __WEBPACK_IMPORTED_MODULE_9__components_private_update_info_update_info_component__["a" /* UpdateInfoComponent */], __WEBPACK_IMPORTED_MODULE_10__components_private_jobs_jobs_component__["a" /* JobsComponent */], __WEBPACK_IMPORTED_MODULE_11__components_private_single_job_single_job_component__["a" /* SingleJobComponent */], __WEBPACK_IMPORTED_MODULE_12__components_private_add_job_add_job_component__["a" /* AddJobComponent */], __WEBPACK_IMPORTED_MODULE_13__components_public_donate_donate_component__["a" /* DonateComponent */], __WEBPACK_IMPORTED_MODULE_14__components_private_add_task_add_task_component__["a" /* AddTaskComponent */]];
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/app-routing.module.js.map
+var routedComponents = [__WEBPACK_IMPORTED_MODULE_2__components_public_register_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_3__components_public_login_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_4__components_public_how_to_use_how_to_use_component__["a" /* HowToUseComponent */], __WEBPACK_IMPORTED_MODULE_5__components_public_about_us_about_us_component__["a" /* AboutUsComponent */], __WEBPACK_IMPORTED_MODULE_6__components_public_home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_13__components_public_footer_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_8__components_private_my_profile_my_profile_component__["a" /* MyProfileComponent */], __WEBPACK_IMPORTED_MODULE_9__components_private_update_info_update_info_component__["a" /* UpdateInfoComponent */], __WEBPACK_IMPORTED_MODULE_10__components_private_jobs_jobs_component__["a" /* JobsComponent */], __WEBPACK_IMPORTED_MODULE_11__components_private_single_job_single_job_component__["a" /* SingleJobComponent */], __WEBPACK_IMPORTED_MODULE_12__components_private_add_job_add_job_component__["a" /* AddJobComponent */]];
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/app-routing.module.js.map
 
 /***/ },
 
-/***/ 523:
+/***/ 520:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1087,51 +957,48 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: "app-root",
-            template: __webpack_require__(705),
-            styles: [__webpack_require__(690)]
+            template: __webpack_require__(699),
+            styles: [__webpack_require__(686)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/app.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/app.component.js.map
 
 /***/ },
 
-/***/ 524:
+/***/ 521:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(483);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(522);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(523);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_public_navigation_navigation_component__ = __webpack_require__(526);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_public_how_to_use_how_to_use_component__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_public_about_us_about_us_component__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_public_home_home_component__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_public_footer_footer_component__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_private_my_profile_my_profile_component__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_private_update_info_update_info_component__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_private_jobs_jobs_component__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_private_single_job_single_job_component__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(480);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(519);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_public_navigation_navigation_component__ = __webpack_require__(523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_public_how_to_use_how_to_use_component__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_public_about_us_about_us_component__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_public_home_home_component__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_public_footer_footer_component__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_private_my_profile_my_profile_component__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_private_update_info_update_info_component__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_private_jobs_jobs_component__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_private_single_job_single_job_component__ = __webpack_require__(339);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_private_add_job_add_job_component__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_public_donate_donate_component__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_private_add_task_add_task_component__ = __webpack_require__(337);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_groups_service__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_jobs_service__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_logged_in_guard__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_not_logged_in_guard__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_users_service__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_authentication_service__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pipes_sort_pipe__ = __webpack_require__(533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pipes_capitalize_pipe__ = __webpack_require__(530);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pipes_remove_spaces_pipe__ = __webpack_require__(532);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pipes_filter_by_role_pipe__ = __webpack_require__(531);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__directives_hightlight_item_directive__ = __webpack_require__(528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__angular_common__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_jobs_service__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_logged_in_guard__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_not_logged_in_guard__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_users_service__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_authentication_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pipes_sort_pipe__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pipes_capitalize_pipe__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pipes_remove_spaces_pipe__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pipes_filter_by_role_pipe__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__directives_hightlight_item_directive__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__angular_common__ = __webpack_require__(84);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1142,9 +1009,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
 
 
 
@@ -1190,13 +1054,11 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_13__components_private_jobs_jobs_component__["a" /* JobsComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__components_private_single_job_single_job_component__["a" /* SingleJobComponent */],
                 __WEBPACK_IMPORTED_MODULE_15__components_private_add_job_add_job_component__["a" /* AddJobComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__components_public_donate_donate_component__["a" /* DonateComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__components_private_add_task_add_task_component__["a" /* AddTaskComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__pipes_sort_pipe__["a" /* SortPipe */],
-                __WEBPACK_IMPORTED_MODULE_25__pipes_capitalize_pipe__["a" /* CapitalizePipe */],
-                __WEBPACK_IMPORTED_MODULE_26__pipes_remove_spaces_pipe__["a" /* RemoveSpacesPipe */],
-                __WEBPACK_IMPORTED_MODULE_27__pipes_filter_by_role_pipe__["a" /* FilterByRolePipe */],
-                __WEBPACK_IMPORTED_MODULE_28__directives_hightlight_item_directive__["a" /* HightlightItemDirective */]
+                __WEBPACK_IMPORTED_MODULE_21__pipes_sort_pipe__["a" /* SortPipe */],
+                __WEBPACK_IMPORTED_MODULE_22__pipes_capitalize_pipe__["a" /* CapitalizePipe */],
+                __WEBPACK_IMPORTED_MODULE_23__pipes_remove_spaces_pipe__["a" /* RemoveSpacesPipe */],
+                __WEBPACK_IMPORTED_MODULE_24__pipes_filter_by_role_pipe__["a" /* FilterByRolePipe */],
+                __WEBPACK_IMPORTED_MODULE_25__directives_hightlight_item_directive__["a" /* HightlightItemDirective */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["b" /* BrowserModule */],
@@ -1204,23 +1066,23 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["d" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_4__app_routing_module__["b" /* AppRoutingModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_22__services_users_service__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_23__services_authentication_service__["a" /* AuthenticationService */], __WEBPACK_IMPORTED_MODULE_20__services_logged_in_guard__["a" /* LoggedInGuard */], __WEBPACK_IMPORTED_MODULE_21__services_not_logged_in_guard__["a" /* NotLoggedInGuard */], __WEBPACK_IMPORTED_MODULE_19__services_jobs_service__["a" /* JobsService */], __WEBPACK_IMPORTED_MODULE_18__services_groups_service__["a" /* GroupsService */], { provide: __WEBPACK_IMPORTED_MODULE_29__angular_common__["c" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_29__angular_common__["f" /* HashLocationStrategy */] }],
+            providers: [__WEBPACK_IMPORTED_MODULE_19__services_users_service__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_20__services_authentication_service__["a" /* AuthenticationService */], __WEBPACK_IMPORTED_MODULE_17__services_logged_in_guard__["a" /* LoggedInGuard */], __WEBPACK_IMPORTED_MODULE_18__services_not_logged_in_guard__["a" /* NotLoggedInGuard */], __WEBPACK_IMPORTED_MODULE_16__services_jobs_service__["a" /* JobsService */], { provide: __WEBPACK_IMPORTED_MODULE_26__angular_common__["c" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_26__angular_common__["f" /* HashLocationStrategy */] }],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/app.module.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/app.module.js.map
 
 /***/ },
 
-/***/ 525:
+/***/ 522:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user__ = __webpack_require__(153);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1248,24 +1110,24 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-login',
-            template: __webpack_require__(717),
-            styles: [__webpack_require__(702)]
+            template: __webpack_require__(709),
+            styles: [__webpack_require__(696)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__["a" /* AuthenticationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__["a" /* AuthenticationService */]) === 'function' && _a) || Object])
     ], LoginComponent);
     return LoginComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/login.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/login.component.js.map
 
 /***/ },
 
-/***/ 526:
+/***/ 523:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(106);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NavigationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1293,27 +1155,25 @@ var NavigationComponent = (function () {
     NavigationComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-navigation',
-            template: __webpack_require__(718),
-            styles: [__webpack_require__(703)]
+            template: __webpack_require__(710),
+            styles: [__webpack_require__(697)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__["a" /* AuthenticationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__["a" /* AuthenticationService */]) === 'function' && _a) || Object])
     ], NavigationComponent);
     return NavigationComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/navigation.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/navigation.component.js.map
 
 /***/ },
 
-/***/ 527:
+/***/ 524:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_users_service__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_groups_service__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_user__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_group__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_user__ = __webpack_require__(153);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RegisterComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1327,40 +1187,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
 var RegisterComponent = (function () {
-    function RegisterComponent(userService, groupService) {
+    function RegisterComponent(userService) {
         this.userService = userService;
-        this.groupService = groupService;
     }
     RegisterComponent.prototype.ngOnInit = function () {
-        this.model = new __WEBPACK_IMPORTED_MODULE_3__models_user__["a" /* User */]('', '', '', '', '', '');
+        this.model = new __WEBPACK_IMPORTED_MODULE_2__models_user__["a" /* User */]('', '', '', '', '', '');
     };
     RegisterComponent.prototype.add = function () {
         this.userService.addUser(this.model);
-        this.groupService.create(new __WEBPACK_IMPORTED_MODULE_4__models_group__["a" /* Group */]("My Group"));
     };
     RegisterComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-register',
-            template: __webpack_require__(719),
-            styles: [__webpack_require__(704)]
+            template: __webpack_require__(711),
+            styles: [__webpack_require__(698)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_groups_service__["a" /* GroupsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_groups_service__["a" /* GroupsService */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */]) === 'function' && _a) || Object])
     ], RegisterComponent);
     return RegisterComponent;
-    var _a, _b;
+    var _a;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/register.component.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/register.component.js.map
 
 /***/ },
 
-/***/ 528:
+/***/ 525:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_invert_color__ = __webpack_require__(535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_invert_color__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return HightlightItemDirective; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1444,27 +1300,11 @@ var HightlightItemDirective = (function () {
     var _a;
 }());
 ;
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/hightlight-item.directive.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/hightlight-item.directive.js.map
 
 /***/ },
 
-/***/ 529:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Group; });
-var Group = (function () {
-    function Group(title) {
-        this.title = title;
-        this.dateCreated = new Date();
-    }
-    return Group;
-}());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/group.js.map
-
-/***/ },
-
-/***/ 530:
+/***/ 526:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1499,11 +1339,11 @@ var CapitalizePipe = (function () {
     ], CapitalizePipe);
     return CapitalizePipe;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/capitalize.pipe.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/capitalize.pipe.js.map
 
 /***/ },
 
-/***/ 531:
+/***/ 527:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1537,11 +1377,11 @@ var FilterByRolePipe = (function () {
     ], FilterByRolePipe);
     return FilterByRolePipe;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/filter-by-role.pipe.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/filter-by-role.pipe.js.map
 
 /***/ },
 
-/***/ 532:
+/***/ 528:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1571,11 +1411,11 @@ var RemoveSpacesPipe = (function () {
     ], RemoveSpacesPipe);
     return RemoveSpacesPipe;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/remove-spaces.pipe.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/remove-spaces.pipe.js.map
 
 /***/ },
 
-/***/ 533:
+/***/ 529:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1632,11 +1472,11 @@ var SortPipe = (function () {
     ], SortPipe);
     return SortPipe;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/sort.pipe.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/sort.pipe.js.map
 
 /***/ },
 
-/***/ 534:
+/***/ 530:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1661,15 +1501,15 @@ var RGB = (function () {
     };
     return RGB;
 }());
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/RGB.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/RGB.js.map
 
 /***/ },
 
-/***/ 535:
+/***/ 531:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RGB__ = __webpack_require__(534);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RGB__ = __webpack_require__(530);
 /* harmony export (immutable) */ exports["a"] = invert;
 
 function invert(color) {
@@ -1684,11 +1524,11 @@ function invert(color) {
     return rgbColor.invert();
 }
 ;
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/invert-color.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/invert-color.js.map
 
 /***/ },
 
-/***/ 536:
+/***/ 532:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1700,45 +1540,45 @@ function invert(color) {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/environment.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/environment.js.map
 
 /***/ },
 
-/***/ 537:
+/***/ 533:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(547);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(544);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(540);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(540);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(536);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(546);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(542);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(541);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(543);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(550);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(546);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(535);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(534);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(544);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(549);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(545);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(547);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(543);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(552);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(548);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(734);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(726);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__);
 
 
@@ -1756,227 +1596,199 @@ var environment = {
 
 
 
-//# sourceMappingURL=C:/Users/prot3/OneDrive/Documents/GitHub/node-js-angular-project/src/polyfills.js.map
+//# sourceMappingURL=C:/Users/prot3ct/Documents/GitHub/node-js-angular-project/src/polyfills.js.map
 
 /***/ },
 
-/***/ 690:
+/***/ 686:
 /***/ function(module, exports) {
 
 module.exports = ""
 
 /***/ },
 
-/***/ 691:
+/***/ 687:
 /***/ function(module, exports) {
 
-module.exports = "h2 {\r\n    text-align: center;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n}\r\n\r\ninput,\r\nselect {\r\n    width: 85%;\r\n}\r\n\r\nform {\r\n    margin-bottom: 135px;\r\n    margin-top: 5%;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}\r\n\r\ntextarea {\r\n    max-width: 800px\r\n}"
+module.exports = "h2 {\n    text-align: center;\n    margin-bottom: 30px;\n    margin-top: 30px;\n}\n\ninput,\nselect {\n    width: 85%;\n}\n\nform {\n    margin-bottom: 135px;\n    margin-top: 5%;\n}\n\n.container {\n    margin-top: 50px\n}\n\ntextarea {\n    max-width: 800px\n}"
 
 /***/ },
 
-/***/ 692:
-/***/ function(module, exports) {
-
-module.exports = "h2 {\r\n    text-align: center;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n}\r\n\r\ninput,\r\nselect {\r\n    width: 85%;\r\n}\r\n\r\nform {\r\n    margin-bottom: 135px;\r\n    margin-top: 5%;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}\r\n\r\ntextarea {\r\n    max-width: 800px\r\n}\r\n\r\nspan {\r\n    margin-left: 40px\r\n}"
-
-/***/ },
-
-/***/ 693:
+/***/ 688:
 /***/ function(module, exports) {
 
 module.exports = ".form-actions {\r\n    margin: 0;\r\n    background-color: transparent;\r\n    text-align: center;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}\r\n\r\nimg {\r\n    max-width: 250px;\r\n    max-height: 150px;\r\n    /*\r\n    max-width: 100%;\r\n    height: auto */\r\n}\r\n\r\nul {\r\n    list-style-type: none;\r\n    display: block;\r\n}\r\n\r\nli {\r\n    display: inline-block;\r\n}\r\n\r\n.picture-list {\r\n    width: 250px;\r\n    height: 150px;\r\n}"
 
 /***/ },
 
+/***/ 689:
+/***/ function(module, exports) {
+
+module.exports = "img {\n    margin-left: 20%;\n}\n\n.container {\n    margin-top: -15px;\n    margin-bottom: 30px;\n}\n\n#members {\n    margin-top: -10px;\n}\n\n.link {\n    color: white;\n    background-color: royalblue;\n    padding: 10px\n}\n\n.important {\n    border-radius: unset;\n}\n\n.container {\n    margin-top: 50px\n}\n\nimg {\n    max-width: 200px;\n    height: auto\n}"
+
+/***/ },
+
+/***/ 690:
+/***/ function(module, exports) {
+
+module.exports = ".container {\n    margin-top: 50px\n}\n\nh2 {\n    text-align: center\n}\n\n.important {\n    color: white;\n    background-color: royalblue;\n    padding: 10px;\n    text-align: center\n}\n\nimg {\n    max-width: 720px;\n    max-height: 500px\n}"
+
+/***/ },
+
+/***/ 691:
+/***/ function(module, exports) {
+
+module.exports = "h2 {\n    text-align: center;\n    margin-bottom: 30px;\n    margin-top: 30px;\n}\n\ninput,\nselect {\n    width: 85%;\n}\n\nform {\n    margin-bottom: 135px;\n    margin-top: 5%;\n}\n\n.container {\n    margin-top: 50px\n}"
+
+/***/ },
+
+/***/ 692:
+/***/ function(module, exports) {
+
+module.exports = ".jumbotron {\n    height: 700px;\n    background-image: url('./../../../../Resources/positive.jpg');\n    background-repeat: no-repeat;\n    background-size: 100% 100%;\n    height: 500px\n}\n\n.right-align {\n    float: right;\n    margin-top: -100px\n}\n\n.important {\n    color: black;\n    background-color: #FFE086;\n    padding: 10px\n}\n\n.important-box {\n    border: 2px solid darkslategrey\n}\n\n.helpguide {\n    text-decoration: underline;\n    margin-top: 20px\n}\n\n.link {\n    background-color: #8DB8F2;\n    padding: 10px\n}\n\n.link a {\n    color: white;\n}\n\n.drug-abuse {\n    text-decoration: underline;\n    color: #8DB8F2\n}\n\n.center {\n    border: none;\n    background-color: #FFE086;\n    font-weight: bold;\n    color: black;\n    margin-right: 100px;\n    margin-top: 20px\n}\n\n.container {\n    margin-top: 50px\n}"
+
+/***/ },
+
+/***/ 693:
+/***/ function(module, exports) {
+
+module.exports = "footer {\n    background-color: #222222;\n    height: 100\n}\n\n.ul-footer {\n    margin-left: -40px;\n    padding-top: 1%;\n}\n\n.footer-link {\n    display: inline-block;\n    margin-right: 25px\n}\n\nspan {\n    margin-left: 50px;\n    margin-right: 50px\n}\n\n.copyright {\n    color: lightgrey\n}"
+
+/***/ },
+
 /***/ 694:
 /***/ function(module, exports) {
 
-module.exports = "img {\r\n    margin-left: 20%;\r\n}\r\n\r\n.container {\r\n    margin-top: -15px;\r\n    margin-bottom: 30px;\r\n}\r\n\r\n#members {\r\n    margin-top: -10px;\r\n}\r\n\r\n.link {\r\n    color: white;\r\n    background-color: royalblue;\r\n    padding: 10px\r\n}\r\n\r\n.important {\r\n    border-radius: unset;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}\r\n\r\nimg {\r\n    max-width: 200px;\r\n    height: auto\r\n}"
+module.exports = ".header-banner {\n    max-width: 100%;\n    max-height: 75%;\n    width: 100%;    \n}\n\n.well {\n    height: 100\n}\n\n.background {\n    background-color: black\n}"
 
 /***/ },
 
 /***/ 695:
 /***/ function(module, exports) {
 
-module.exports = ".container {\r\n    margin-top: 50px\r\n}\r\n\r\nh2 {\r\n    text-align: center\r\n}\r\n\r\n.important {\r\n    color: white;\r\n    background-color: royalblue;\r\n    padding: 10px;\r\n    text-align: center\r\n}\r\n\r\nimg {\r\n    max-width: 720px;\r\n    max-height: 500px\r\n}"
+module.exports = ".video-container {\n    position: relative;\n    padding-bottom: 45%;\n    padding-top: 30px;\n    height: 0;\n    overflow: hidden;\n    margin-left: 150px;\n}\n\n.video-container iframe,\n.video-container object,\n.video-container embed {\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n\nh2 {\n    text-align: center;\n    margin: 30px;\n}\n\n.container {\n    margin-top: 50px\n}"
 
 /***/ },
 
 /***/ 696:
 /***/ function(module, exports) {
 
-module.exports = "h2 {\r\n    text-align: center;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n}\r\n\r\ninput,\r\nselect {\r\n    width: 85%;\r\n}\r\n\r\nform {\r\n    margin-bottom: 135px;\r\n    margin-top: 5%;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}"
+module.exports = "h2 {\n    text-align: center;\n    margin-bottom: 30px;\n    margin-top: 30px;\n}\n\ninput {\n    width: 85%;\n}\n\nform {\n    margin-top: 5%;\n    margin-bottom: 282px;\n}\n\n.container {\n    margin-top: 50px\n}"
 
 /***/ },
 
 /***/ 697:
 /***/ function(module, exports) {
 
-module.exports = ".jumbotron {\r\n    height: 700px;\r\n    background-image: url('./../../../../Resources/positive.jpg');\r\n    background-repeat: no-repeat;\r\n    background-size: 100% 100%;\r\n    height: 500px\r\n}\r\n\r\n.right-align {\r\n    float: right;\r\n    margin-top: -100px\r\n}\r\n\r\n.important {\r\n    color: black;\r\n    background-color: #FFE086;\r\n    padding: 10px\r\n}\r\n\r\n.important-box {\r\n    border: 2px solid darkslategrey\r\n}\r\n\r\n.helpguide {\r\n    text-decoration: underline;\r\n    margin-top: 20px\r\n}\r\n\r\n.link {\r\n    background-color: #8DB8F2;\r\n    padding: 10px\r\n}\r\n\r\n.link a {\r\n    color: white;\r\n}\r\n\r\n.drug-abuse {\r\n    text-decoration: underline;\r\n    color: #8DB8F2\r\n}\r\n\r\n.center {\r\n    border: none;\r\n    background-color: #FFE086;\r\n    font-weight: bold;\r\n    color: black;\r\n    margin-right: 100px;\r\n    margin-top: 20px\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}"
+module.exports = ".navbar {\n    margin-bottom: 0;\n    border-radius: 0;\n}\n\n.hidden {\n    display: none;\n}\n\n.logo {\n    height: 150%;\n    margin-top: -5px;\n}"
 
 /***/ },
 
 /***/ 698:
 /***/ function(module, exports) {
 
-module.exports = ".jumbotron {\r\n    background-image: url('./../../../../Resources/cosmos_background_logo.PNG');\r\n    background-size: 100% 100%;\r\n    background-repeat: no-repeat;\r\n    height: 500px\r\n}\r\n\r\n.right-align {\r\n    float: right\r\n}"
+module.exports = "h2 {\n    text-align: center;\n    margin-bottom: 30px;\n    margin-top: 30px;\n}\n\ninput,\nselect {\n    width: 85%;\n}\n\nform {\n    margin-bottom: 135px;\n    margin-top: 5%;\n}\n\n.container {\n    margin-top: 50px\n}\n\nspan {\n    margin-left: 40px\n}"
 
 /***/ },
 
 /***/ 699:
 /***/ function(module, exports) {
 
-module.exports = "footer {\r\n    background-color: #222222;\r\n    height: 100\r\n}\r\n\r\n.ul-footer {\r\n    margin-left: -40px;\r\n    padding-top: 1%;\r\n}\r\n\r\n.footer-link {\r\n    display: inline-block;\r\n    margin-right: 25px\r\n}\r\n\r\nspan {\r\n    margin-left: 50px;\r\n    margin-right: 50px\r\n}\r\n\r\n.copyright {\r\n    color: lightgrey\r\n}"
+module.exports = "<app-navigation></app-navigation>\n<router-outlet></router-outlet>\n<app-footer></app-footer>"
 
 /***/ },
 
 /***/ 700:
 /***/ function(module, exports) {
 
-module.exports = ".header-banner {\r\n    max-width: 100%;\r\n    max-height: 75%;\r\n    width: 100%;    \r\n}\r\n\r\n.well {\r\n    height: 100\r\n}\r\n\r\n.background {\r\n    background-color: black\r\n}"
+module.exports = "<div class=\"container\">\n    <h2>ADD NEW JOB</h2>\n    <hr>\n    <form class=\"form-horizontal\" #addJobForm=\"ngForm\" (ngSubmit)=\"addJob();\">\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-check\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Title\" name=\"title\" [(ngModel)]=\"model.title\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-edit\"></span></label>\n            <div class=\"col-sm-10\">\n                <textarea class=\"form-control\" placeholder=\"Description\" name=\"description\" [(ngModel)]=\"model.description\"></textarea>\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-euro\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Salary\" name=\"salary\" name=\"salary\" [(ngModel)]=\"model.salary\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-hourglass\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Work hours\" name=\"workHours\" [(ngModel)]=\"model.workHours\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-picture\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"avatar\" class=\"form-control\" placeholder=\"Add photo URL\" name=\"pictureUrl\" [(ngModel)]=\"model.pictureUrl\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <div class=\"col-sm-offset-2 col-sm-10\">\n                <button type=\"submit\" class=\"btn btn-primary\">ADD JOB</button>\n            </div>\n        </div>\n    </form>\n</div>\n<br>"
 
 /***/ },
 
 /***/ 701:
 /***/ function(module, exports) {
 
-module.exports = ".video-container {\r\n    position: relative;\r\n    padding-bottom: 45%;\r\n    padding-top: 30px;\r\n    height: 0;\r\n    overflow: hidden;\r\n    margin-left: 150px;\r\n}\r\n\r\n.video-container iframe,\r\n.video-container object,\r\n.video-container embed {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n}\r\n\r\nh2 {\r\n    text-align: center;\r\n    margin: 30px;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}"
+module.exports = "<div class=\"container\">\r\n    <div class=\"container-fluid bg-3 text-center\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 center\">\r\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\r\n                </h2>\r\n            </div>\r\n        </div>\r\n\r\n        <br>\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\r\n                </span>\r\n            </div>\r\n        </div>\r\n        <br> <br> <br> <br>\r\n        <div class=\"col-lg-12 center\">\r\n            <ul>\r\n                <li>\r\n                    <div id=\"picture-container\" *ngFor=\"let job of this.jobs;\" class=\"col-sm-3\">\r\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\r\n                        <img src=\"{{job.pictureUrl}}\" class=\"picture-list img-thumbnail\" alt=\"Image\">\r\n                    </a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"text-center\">\r\n        <a *ngFor=\"let page of this.pages;\" routerLink=\"/jobs\" (click)=\"changePage(page)\">{{page}} </a>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
 
 /***/ },
 
 /***/ 702:
 /***/ function(module, exports) {
 
-module.exports = "h2 {\r\n    text-align: center;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n}\r\n\r\ninput {\r\n    width: 85%;\r\n}\r\n\r\nform {\r\n    margin-top: 5%;\r\n    margin-bottom: 282px;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}"
+module.exports = "<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-lg-12\">\n            <h2 class=\"page-header\"><small>You are logged successfully at</small> TEEN@home\n            </h2>\n        </div>\n    </div>\n\n    <div id=\"members\" class=\"row\">\n        <div class=\"col-lg-12\">\n            <h3 class=\"page-header\">Account Overview</h3>\n        </div>\n        <div class=\"col-lg-4 col-sm-6 text-center profile-left-panel\">\n            <!--<img class=\"img-responsive img-circle img-center\" src=\"{{this.user.profilePictureUrl}}\" alt=\"profilePic\">-->\n            <img class=\"img-responsive img-rounded img-center\" src=\"{{this.user.profilePictureUrl}}\" alt=\"profilePic\">\n            <h3><strong>{{this.user.username | uppercase | removeSpaces}}</strong>\n                <br><small>Parent/Child</small><br>{{this.user.firstName}} {{this.user.lastName}}\n            </h3>\n        </div>\n        <div class=\"col-lg-4 col-sm-6 text-left\">\n            <h4 class=\"link\"><strong>PROFILE INFORMATION</strong></h4>\n            <p><strong>Name: </strong> {{this.user.firstName | capitalize}} {{this.user.lastName | capitalize}}</p>\n            <p><strong>Email: </strong> {{this.user.email}}</p>\n            <p><strong>Nickname: </strong> {{this.user.username | lowercase | removeSpaces}}</p>\n            <p><strong>Created At: </strong> {{this.user.createdAt | date}}</p>\n            <p><strong>Updated At: </strong> {{this.user.lastUpdated | date}}</p>\n        </div>\n        <div class=\"col-lg-4 col-sm-6 text-left\">\n            <h4 class=\"link\"><strong>OPTIONS</strong></h4>\n            <p><a class=\"btn btn-lg btn-info\" routerLink=\"/update-info\" role=\"button\"> UPDATE INFORMATION</a></p>\n            <p><a class=\"btn btn-lg btn-success right-align\" routerLink=\"/donate\" role=\"button\">DONATE NOW!</a></p>\n        </div>\n        <br><br>\n        <div class=\"row\">\n            <div class=\"col-lg-12\">\n                <br><br>\n                <p>Find more information about the app here: <a routerLink=\"/about-us\" target=\"_blank\">ABOUT THE APP</a></p>\n                <p>Video tuttorial: <a routerLink=\"/how-to-use\" target=\"_blank\">HOW TO USE IT</a></p>\n            </div>\n        </div>\n    </div>\n</div>\n<br>"
 
 /***/ },
 
 /***/ 703:
 /***/ function(module, exports) {
 
-module.exports = ".navbar {\r\n    margin-bottom: 0;\r\n    border-radius: 0;\r\n}\r\n\r\n.hidden {\r\n    display: none;\r\n}\r\n\r\n.logo {\r\n    height: 150%;\r\n    margin-top: -5px;\r\n}"
+module.exports = "<div class=\"container\">\r\n    <h2>{{job.title | uppercase}}</h2>\r\n    <hr>\r\n    <div class=\"col-md-8 col-md-offset-2\">\r\n        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" style=\"width:100%\" alt=\"Image\">\r\n    </div>\r\n\r\n    <div class=\"row marketing\">\r\n        <div class=\"col-md-8 col-md-offset-2\">\r\n            <h4 class=\"important\"><strong>JOB DETAILS</strong></h4>\r\n            <p><strong>Description: </strong> {{job.description}}</p>\r\n            <p><strong>Author: </strong> {{job.author | capitalize}}</p>\r\n            <p><strong>Work Hours: </strong> {{job.workHours}}</p>\r\n            <p><strong>Salary: </strong> {{job.salary | currency:'EUR':true}}</p>\r\n            <p><strong>Date Created: </strong> {{job.dateCreated | date:\"MM/dd/yy\"}}</p>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" role=\"button\" (click)=\"deleteJob()\">DELETE JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br><br>"
 
 /***/ },
 
 /***/ 704:
 /***/ function(module, exports) {
 
-module.exports = "h2 {\r\n    text-align: center;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n}\r\n\r\ninput,\r\nselect {\r\n    width: 85%;\r\n}\r\n\r\nform {\r\n    margin-bottom: 135px;\r\n    margin-top: 5%;\r\n}\r\n\r\n.container {\r\n    margin-top: 50px\r\n}\r\n\r\nspan {\r\n    margin-left: 40px\r\n}"
+module.exports = "<div class=\"container\">\n    <h2>UPDATE ACCOUNT INFORMATION</h2>\n    <hr>\n    <form class=\"form-horizontal\" #updateForm=\"ngForm\" (ngSubmit)=\"update();\">\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-send\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"firstName\" placeholder=\"First Name\" name=\"firstName\" [(ngModel)]=\"model.firstName\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-edit\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"lastName\" placeholder=\"Last Name\" name=\"lastName\" [(ngModel)]=\"model.lastName\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-user\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"userName\" placeholder=\"User Name\" name=\"username\" [(ngModel)]=\"model.username\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-transfer\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\" [(ngModel)]=\"model.email\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\"><span class=\"glyphicon glyphicon-lock\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" name=\"password\" [(ngModel)]=\"model.password\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\"><span class=\"glyphicon glyphicon-check\"></span></label>\n            <div class=\"col-sm-10\">\n                <select id=\"category-register\" name=\"category\" required=\"true\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Category'\" class=\"form-control\">\n                    <option value=\"male\">child</option>\n                    <option value=\"female\">parent</option>\n                </select>\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\"><span class=\"glyphicon glyphicon-picture\"></span></label>\n            <div class=\"col-sm-10\">\n                <input type=\"avatar\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter avatar URL (optional)\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <div class=\"col-sm-offset-2 col-sm-10\">\n                <button type=\"submit\" class=\"btn btn-info\">SUBMIT</button>\n            </div>\n        </div>\n    </form>\n</div>\n<br>"
 
 /***/ },
 
 /***/ 705:
 /***/ function(module, exports) {
 
-module.exports = "<app-navigation></app-navigation>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>"
+module.exports = "<div class=\"container\">\n    <div class=\"jumbotron\">\n    </div>\n    <h1 class=\"display-3\">TEEN@home</h1>\n\n    <div class=\"row marketing\">\n        <div class=\"col-lg-12\">\n            <h4><strong>PARENTS vs. CHILDRENS</strong></h4>\n            <p>It’s not easy being a teenager in today’s world. From depression to bullying and cutting, teens grapple with a wide range of issues as they grow and develop. But here’s the good news: you’re not alone and you can feel better.<br> Learn more\n                about the signs and symptoms of some common teen challenges, what you can do to help yourself, and how to reach out and talk about tough subjects with your friends and family members.\n            </p>\n            <p>Тeens are knowledgeable, smart, and confident. They have little challenge to make the right choice when these topics are presented. However, it is important to recognize that these issues are possibly effecting the families and friends with\n                which spends time.\n            </p>\n            <p>Parenting has often been described as a full-time job. Moms and dads have to organize children’s schedules, find kid-friendly places to eat, and remember all the things that their family needs from the grocery store this week. Fortunately,\n                there is <strong>TEEN@home</strong> app that can help busy parents to keep track of everything. We are here to help parents with all parenting challenges from those everyday situations to the most serious issue of child abuse.\n            </p>\n            <h4><strong>TEEN AT HOME</strong></h4>\n            <p>This application is specially developed for Parents and Children. The main idea is to help both groups to have better communication, easier life, and positive emotions. If you are busy Parent and don't have enough time for your children. If\n                you have the full-time job and cannot stay at home to organize children’s schedules, to study whit them and do all homework, to remember all the things in schedules as sport, lessons etc. If you have a lazy teen at home, who doesn't want\n                to help with the domestic work, want to do their homework and Learn new things! If you are TEEN and don't have enough money for school.. and many more reasons. Here is the simple solve of everything! <br>\n                <br><strong>TEEN@home</strong> is here! <br><br> This APP is amazing! Its provide opportunity to make daily/week Task list for your child. With everything needed for school lessons, homework, training, sport and domestic tasks. You can\n                add tasks and wish improvement for their solving like - picture, video etc. TEEN AT HOME provide you best opportunity to control your Children when you aren't at home and to manage successful their daily/weekly schedules. For every solved\n                task, the teens receive points. They collect their points in the wallet because every point is 1 $/Euro. This mean that you can control the money as well. If some child solves all necessary tasks for the day, it can receive daily cash\n                for tomorrow or for next week, depends on the Task list type (daily / weekly). <br> TEEN AT HOME is perfect HELPER for Parents and successful motive for better Children.\n                <br> If you are the parent of trouble TEEN you can find <a routerLink=\"/parent-helper\">help</a> in our app! You are not alone, every child grow up! <br>If you are TEEN who need more money for a week, you can find <a href=\"/teen-jobs\">help</a>                in our the app as well!\n            </p>\n            <h4 class=\"helpguide\"><a routerLink=\"/how-to-use\"><strong>TUTTORIAL HOW TO USE THE APP</strong></a></h4>\n            <p>In this page you can find video tuttorial about how to use succesful our application.</p>\n            <h4 class=\"important\"><strong>What you can find here</strong></h4>\n            <div class=\"box important-box\">\n                <ol>\n                    <li>Are you a teenager looking for a job? Or perhaps a parent who is helping your kid to get their first job? You can find jobs for teens</li>\n                    <li>You can find help if you are parent of trouble TEEN!</li>\n                    <li>Can find help for busy Parents.</li>\n                    <li>Can add daily / weekly tasks for your child.</li>\n                    <li>Can have full control of your child and manage successful child's schedules.</li>\n                    <li>Motivate you Children to study and help with house work as well.</li>\n                    <li>Have full control of the weekly money.</li>\n                    <li>All childrens can receive more money when they do bonus tasks.</li>\n                </ol>\n            </div>\n        </div>\n\n        <div class=\"col-lg-6\">\n            <h4 class=\"link\"><a href=\"http://www.hireteen.com/\"><strong>Hire Teen</strong></a></h4>\n            <p>Job application should be processed in the website of the company you are applying for or you need to follow the guideline which is provided on each company review.</p>\n            <h4 class=\"link\"><a href=\"http://www.snagajob.com/job-search/q-teen\"><strong>Snaga job</strong></a></h4>\n            <p>Get solutions across the entire hiring process—more applications, qualified hires, easier scheduling and more.</p>\n            <h4 class=\"link\"><a href=\"http://www.dreamhomebasedwork.com/online-jobs-for-teens/\"><strong>Dream home based work</strong></a></h4>\n            <p>Most people who have a regular job during the day, end up taking jobs that they can do in the evening or the night. You can actually spend your time in a more constructive way and make some money while at it.</p>\n            <h4 class=\"drug-abuse\"><strong>Popular part-time jobs and small business opportunities:</strong></h4>\n            <div class=\"box important-box\">\n                <ul>\n                    <li><strong>Animal Shelter Worker</strong></li>\n                    <li><strong>Arts and Crafts Production and Sales</strong></li>\n                    <li><strong>Babysitting</strong></li>\n                    <li><strong>Car Wash Attendant</strong></li>\n                    <li><strong>Document and Photograph Archival Services</strong></li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"col-lg-6\">\n            <h4 class=\"link\"><a href=\"http://www.parenthelp.org.nz/\"><strong>Parent Help</strong></a></h4>\n            <p>At Parent Help we offer the only designated free national parenting helpline in New Zealand that is available seven days a week. We are here to help parents. of child abuse.</p>\n            <h4 class=\"link\"><a href=\"http://busyparentsnetwork.com/\"><strong>Busy Parents Network</strong></a></h4>\n            <p>Busy Parents Network is a community social enterprise set up with the specific intention of bringing families together in the local community for fun and more.</p>\n            <h4 class=\"link\"><a href=\"http://www.teendrugrehabs.com/\"><strong>Teen drug rehabs</strong></a></h4>\n            <p>Drug abuse and addiction that starts in the teenage years can lead to lifelong abuse and addiction if the problem isn’t addressed early on. Parents need to know what to look for and how to get help.</p>\n            <h4 class=\"drug-abuse\"><strong>You Need to Know About Teenage Drug Abuse:</strong></h4>\n            <div class=\"box important-box\">\n                <ul>\n                    <li><strong>Family History.</strong></li>\n                    <li><strong>Relationships.</strong></li>\n                    <li><strong>Mental Health.</strong></li>\n                    <li><strong>Personal Development.</strong></li>\n                    <li><strong>Availability.</strong></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>\n<br><br>\n<br><br>"
 
 /***/ },
 
 /***/ 706:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h2>ADD NEW JOB</h2>\r\n    <hr>\r\n    <form class=\"form-horizontal\" #addJobForm=\"ngForm\" (ngSubmit)=\"addJob();\">\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-check\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Title\" name=\"title\" [(ngModel)]=\"model.title\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-edit\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <textarea class=\"form-control\" placeholder=\"Description\" name=\"description\" [(ngModel)]=\"model.description\"></textarea>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-euro\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Salary\" name=\"salary\" name=\"salary\" [(ngModel)]=\"model.salary\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-hourglass\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Work hours\" name=\"workHours\" [(ngModel)]=\"model.workHours\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\"><span class=\"glyphicon glyphicon-picture\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"avatar\" class=\"form-control\" placeholder=\"Add photo URL\" name=\"pictureUrl\" [(ngModel)]=\"model.pictureUrl\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <div class=\"col-sm-offset-2 col-sm-10\">\r\n                <button type=\"submit\" class=\"btn btn-primary\">ADD JOB</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>\r\n<br>"
+module.exports = "<footer class=\"container-fluid text-center navbar-fixed-bottom\">\n    <ul class=\"ul-footer\">\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/how-to-use\">How to use it</a><span>|</span></li>\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/about-us\">About the App</a><span>|</span></li>\n        <li class=\"footer-link copyright\"><strong>TEEN@home</strong></li>\n    </ul>\n</footer>"
 
 /***/ },
 
 /***/ 707:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h2>ADD NEW TASK</h2>\r\n    <hr>\r\n    <form class=\"form-horizontal\">\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-check\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" placeholder=\"Task title\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-edit\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <textarea class=\"form-control\" placeholder=\"Description\"></textarea>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-user\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" placeholder=\"Author\" name=\"username\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"pwd\"><span class=\"glyphicon glyphicon-hourglass\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <label class=\"radio-inline\">\r\n                    <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio1\" value=\"option1\"> <span> DAILY</span>\r\n                </label>\r\n                <label class=\"radio-inline\">\r\n                    <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio2\" value=\"option2\"> <span> WEEKLY</span>\r\n                </label>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <div class=\"col-sm-offset-2 col-sm-10\">\r\n                <button type=\"submit\" class=\"btn btn-success\">ADD NEW TASK</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>\r\n<br>"
+module.exports = "<div class=\"col-lg-12 background\">\n    <div>\n        <img class=\"header-banner\" src=\"./../../../../Resources/cosmos_background_logo.PNG\" alt=\"Image\">\n        <div class=\"carousel-caption\">\n            <p>TEEN@home</p>\n        </div>\n    </div>\n</div>\n<div class=\"container text-center\">\n    <h3>What We Do</h3><br>\n    <div class=\"row\">\n        <div class=\"col-sm-4\">\n            <img src=\"./../../../../Resources/lazy-teen.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">\n            <p><strong>LAZY TEENS</strong></p>\n        </div>\n        <div class=\"col-sm-4\">\n            <img src=\"./../../../../Resources/busy-parent.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">\n            <p><strong>BUSY PARENTS</strong></p>\n        </div>\n        <div class=\"col-sm-4\">\n            <div class=\"well\">\n                <p><strong>TEEN PROBLEMS</strong> <br> It’s not easy being a teenager in today’s world. From depression to bullying and cutting, teens grapple with a wide range of issues as they grow and develop. But here’s the good news: you’re not alone\n                    and you can feel better.\n                </p>\n            </div>\n            <div class=\"well\">\n                <p><strong>PARENT HELPER</strong> <br> Parenting has often been described as a full-time job. Moms and dads have to organize children’s schedules, find kid-friendly places to eat, and remember all the things that their family needs from the\n                    grocery store this week.\n                </p>\n            </div>\n        </div>\n    </div>\n</div><br><br>"
 
 /***/ },
 
 /***/ 708:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"container-fluid bg-3 text-center\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 center\">\r\n                <h2 class=\"page-header\">JOBS <small>at TEEN@home</small>\r\n                </h2>\r\n            </div>\r\n        </div>\r\n\r\n        <br>\r\n        <div class=\"col-lg-6\">\r\n            <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-primary\" type=\"button\"><span class=\"glyphicon glyphicon-search\" placeholder=\"Search...\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Search...'\"></span></button>\r\n                </span>\r\n            </div>\r\n        </div>\r\n        <br> <br> <br> <br>\r\n        <div class=\"col-lg-12 center\">\r\n            <ul>\r\n                <li>\r\n                    <div id=\"picture-container\" *ngFor=\"let job of this.jobs;\" class=\"col-sm-3\">\r\n                        <a routerLink=\"/jobs/single-job/{{job.id}}\"> {{job.title | uppercase}}\r\n                        <img src=\"{{job.pictureUrl}}\" class=\"picture-list img-thumbnail\" alt=\"Image\">\r\n                    </a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <br>\r\n    <div class=\"text-center\">\r\n        <a *ngFor=\"let page of this.pages;\" routerLink=\"/jobs\" (click)=\"changePage(page)\">{{page}} </a>    \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" routerLink=\"/add-job\" role=\"button\">ADD NEW JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
+module.exports = "<div class=\"container\">\n    <h2>Learn how to use our product!</h2>\n    <hr>\n    <div class=\"video-container\">\n        <iframe width=\"853\" height=\"480\" src=\"http://www.screencast.com/t/8gs9mqlr9lF\" frameborder=\"0\" allowfullscreen></iframe>\n    </div>\n</div>\n<br>"
 
 /***/ },
 
 /***/ 709:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <h2 class=\"page-header\"><small>You are logged successfully at</small> TEEN@home\r\n            </h2>\r\n        </div>\r\n    </div>\r\n\r\n    <div id=\"members\" class=\"row\">\r\n        <div class=\"col-lg-12\">\r\n            <h3 class=\"page-header\">Account Overview</h3>\r\n        </div>\r\n        <div class=\"col-lg-4 col-sm-6 text-center profile-left-panel\">\r\n            <!--<img class=\"img-responsive img-circle img-center\" src=\"{{this.user.profilePictureUrl}}\" alt=\"profilePic\">-->\r\n            <img class=\"img-responsive img-rounded img-center\" src=\"{{this.user.profilePictureUrl}}\" alt=\"profilePic\">\r\n            <h3><strong>{{this.user.username | uppercase | removeSpaces}}</strong>\r\n                <br><small>Parent/Child</small><br>{{this.user.firstName}} {{this.user.lastName}}\r\n            </h3>\r\n        </div>\r\n        <div class=\"col-lg-4 col-sm-6 text-left\">\r\n            <h4 class=\"link\"><strong>PROFILE INFORMATION</strong></h4>\r\n            <p><strong>Name: </strong> {{this.user.firstName | capitalize}} {{this.user.lastName | capitalize}}</p>\r\n            <p><strong>Email: </strong> {{this.user.email}}</p>\r\n            <p><strong>Nickname: </strong> {{this.user.username | lowercase | removeSpaces}}</p>\r\n            <p><strong>Created At: </strong> {{this.user.createdAt | date}}</p>\r\n            <p><strong>Updated At: </strong> {{this.user.lastUpdated | date}}</p>\r\n        </div>\r\n        <div class=\"col-lg-4 col-sm-6 text-left\">\r\n            <h4 class=\"link\"><strong>OPTIONS</strong></h4>\r\n            <p><a class=\"btn btn-lg btn-info\" routerLink=\"/update-info\" role=\"button\"> UPDATE INFORMATION</a></p>\r\n            <p><a class=\"btn btn-lg btn-success right-align\" routerLink=\"/donate\" role=\"button\">DONATE NOW!</a></p>\r\n        </div>\r\n        <br><br>\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12\">\r\n                <br><br>\r\n                <p>Find more information about the app here: <a routerLink=\"/about-us\" target=\"_blank\">ABOUT THE APP</a></p>\r\n                <p>Video tuttorial: <a routerLink=\"/how-to-use\" target=\"_blank\">HOW TO USE IT</a></p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br>"
+module.exports = "<div class=\"container\">\n    <h2>LOGIN</h2>\n    <hr>\n    <form class=\"form-horizontal\" #superheroesForm=\"ngForm\" (ngSubmit)=\"login();\">\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">User Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"userName\" placeholder=\"User Name\" name=\"username\" [(ngModel)]=\"model.username\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Password:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" name=\"password\" [(ngModel)]=\"model.password\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <div class=\"col-sm-offset-2 col-sm-10\">\n                <button type=\"submit\" class=\"btn btn-primary\">SUBMIT</button>\n            </div>\n        </div>\n    </form>\n</div>\n<br>"
 
 /***/ },
 
 /***/ 710:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h2>{{job.title | uppercase}}</h2>\r\n    <hr>\r\n    <div class=\"col-md-8 col-md-offset-2\">\r\n        <img src=\"{{job.pictureUrl}}\" class=\"img-responsive img-thumbnail\" style=\"width:100%\" alt=\"Image\">\r\n    </div>\r\n\r\n    <div class=\"row marketing\">\r\n        <div class=\"col-md-8 col-md-offset-2\">\r\n            <h4 class=\"important\"><strong>JOB DETAILS</strong></h4>\r\n            <p><strong>Description: </strong> {{job.description}}</p>\r\n            <p><strong>Author: </strong> {{job.author | capitalize}}</p>\r\n            <p><strong>Work Hours: </strong> {{job.workHours}}</p>\r\n            <p><strong>Salary: </strong> {{job.salary | currency:'EUR':true}}</p>\r\n            <p><strong>Date Created: </strong> {{job.dateCreated | date:\"MM/dd/yy\"}}</p>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-12 text-center\">\r\n            <p><a class=\"btn btn-lg btn-primary\" role=\"button\" (click)=\"deleteJob()\">DELETE JOB</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br><br>"
+module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/home\"><img class=\"logo\" src=\"./../../../../Resources/logo.PNG\"> </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li><a routerLink=\"/how-to-use\">HOW TO USE IT</a></li>\r\n                <li><a routerLink=\"/about-us\">ABOUT THE APP</a></li>\r\n            </ul>\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n\r\n                <li *ngIf=\"isLoggedIn()\"><a routerLink=\"/jobs\"><span class=\"glyphicon glyphicon-equalizer\"></span> JOBS</a></li>\r\n                <li *ngIf=\"isLoggedIn()\"><a routerLink=\"/my-profile\"><span class=\"glyphicon glyphicon-user\"></span> MY PROFILE</a></li>\r\n                <li *ngIf=\"isLoggedIn()\"><a (click)=\"logout()\" routerLink=\"/home\"><span class=\"glyphicon glyphicon-log-out\"></span> LOGOUT</a></li>\r\n                <li *ngIf=\"!isLoggedIn()\"><a routerLink=\"/login\"><span class=\"glyphicon glyphicon-log-in\" ></span> LOGIN</a></li>\r\n                <li *ngIf=\"!isLoggedIn()\"><a routerLink=\"/register\"><span class=\"glyphicon glyphicon-lock\"></span> REGISTER</a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>"
 
 /***/ },
 
 /***/ 711:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h2>UPDATE ACCOUNT INFORMATION</h2>\r\n    <hr>\r\n    <form class=\"form-horizontal\" #updateForm=\"ngForm\" (ngSubmit)=\"update();\">\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-send\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" id=\"firstName\" placeholder=\"First Name\" name=\"firstName\" [(ngModel)]=\"model.firstName\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-edit\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" id=\"lastName\" placeholder=\"Last Name\" name=\"lastName\" [(ngModel)]=\"model.lastName\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-user\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" id=\"userName\" placeholder=\"User Name\" name=\"username\" [(ngModel)]=\"model.username\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\"><span class=\"glyphicon glyphicon-transfer\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\" [(ngModel)]=\"model.email\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"pwd\"><span class=\"glyphicon glyphicon-lock\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" name=\"password\" [(ngModel)]=\"model.password\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"pwd\"><span class=\"glyphicon glyphicon-check\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <select id=\"category-register\" name=\"category\" required=\"true\" onfocus=\"this.placeholder = ''\" onblur=\"this.placeholder ='Category'\" class=\"form-control\">\r\n                    <option value=\"male\">child</option>\r\n                    <option value=\"female\">parent</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"pwd\"><span class=\"glyphicon glyphicon-picture\"></span></label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"avatar\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter avatar URL (optional)\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <div class=\"col-sm-offset-2 col-sm-10\">\r\n                <button type=\"submit\" class=\"btn btn-info\">SUBMIT</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>\r\n<br>"
+module.exports = "<div class=\"container\">\n    <h2>CREATE NEW ACCOUNT</h2>\n    <hr>\n    <form class=\"form-horizontal\" #registerForm=\"ngForm\" (ngSubmit)=\"add();\">\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">First Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"firstName\" placeholder=\"First Name\" name=\"firstName\" [(ngModel)]=\"model.firstName\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">Last Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"lastName\" placeholder=\"Last Name\" name=\"lastName\" [(ngModel)]=\"model.lastName\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">User Name:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"name\" class=\"form-control\" id=\"userName\" placeholder=\"User Name\" name=\"username\" [(ngModel)]=\"model.username\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"email\">Email:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\" [(ngModel)]=\"model.email\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Password:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" name=\"password\" [(ngModel)]=\"model.password\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Avatar:</label>\n            <div class=\"col-sm-10\">\n                <input type=\"avatar\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter avatar URL (optional)\" name=\"profilePictureUrl\" [(ngModel)]=\"model.profilePictureUrl\">\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <div class=\"col-sm-offset-2 col-sm-10\">\n                <button type=\"submit\" class=\"btn btn-primary\">SUBMIT</button>\n            </div>\n        </div>\n    </form>\n</div>\n<br>"
 
 /***/ },
 
-/***/ 712:
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <div class=\"jumbotron\">\r\n    </div>\r\n    <h1 class=\"display-3\">TEEN@home</h1>\r\n    <p class=\"lead\">Be a helper if you like our app <a routerLink=\"/donate\">donate</a> to help develop it better!</p>\r\n    <p><a class=\"btn btn-lg btn-primary right-align\" routerLink=\"/donate\" role=\"button\">DONATE NOW!</a></p>\r\n\r\n    <div class=\"row marketing\">\r\n        <div class=\"col-lg-12\">\r\n            <h4><strong>PARENTS vs. CHILDRENS</strong></h4>\r\n            <p>It’s not easy being a teenager in today’s world. From depression to bullying and cutting, teens grapple with a wide range of issues as they grow and develop. But here’s the good news: you’re not alone and you can feel better.<br> Learn more\r\n                about the signs and symptoms of some common teen challenges, what you can do to help yourself, and how to reach out and talk about tough subjects with your friends and family members.\r\n            </p>\r\n            <p>Тeens are knowledgeable, smart, and confident. They have little challenge to make the right choice when these topics are presented. However, it is important to recognize that these issues are possibly effecting the families and friends with\r\n                which spends time.\r\n            </p>\r\n            <p>Parenting has often been described as a full-time job. Moms and dads have to organize children’s schedules, find kid-friendly places to eat, and remember all the things that their family needs from the grocery store this week. Fortunately,\r\n                there is <strong>TEEN@home</strong> app that can help busy parents to keep track of everything. We are here to help parents with all parenting challenges from those everyday situations to the most serious issue of child abuse.\r\n            </p>\r\n            <h4><strong>TEEN AT HOME</strong></h4>\r\n            <p>This application is specially developed for Parents and Children. The main idea is to help both groups to have better communication, easier life, and positive emotions. If you are busy Parent and don't have enough time for your children. If\r\n                you have the full-time job and cannot stay at home to organize children’s schedules, to study whit them and do all homework, to remember all the things in schedules as sport, lessons etc. If you have a lazy teen at home, who doesn't want\r\n                to help with the domestic work, want to do their homework and Learn new things! If you are TEEN and don't have enough money for school.. and many more reasons. Here is the simple solve of everything! <br>\r\n                <br><strong>TEEN@home</strong> is here! <br><br> This APP is amazing! Its provide opportunity to make daily/week Task list for your child. With everything needed for school lessons, homework, training, sport and domestic tasks. You can\r\n                add tasks and wish improvement for their solving like - picture, video etc. TEEN AT HOME provide you best opportunity to control your Children when you aren't at home and to manage successful their daily/weekly schedules. For every solved\r\n                task, the teens receive points. They collect their points in the wallet because every point is 1 $/Euro. This mean that you can control the money as well. If some child solves all necessary tasks for the day, it can receive daily cash\r\n                for tomorrow or for next week, depends on the Task list type (daily / weekly). <br> TEEN AT HOME is perfect HELPER for Parents and successful motive for better Children.\r\n                <br> If you are the parent of trouble TEEN you can find <a routerLink=\"/parent-helper\">help</a> in our app! You are not alone, every child grow up! <br>If you are TEEN who need more money for a week, you can find <a href=\"/teen-jobs\">help</a>                in our the app as well!\r\n            </p>\r\n            <h4 class=\"helpguide\"><a routerLink=\"/how-to-use\"><strong>TUTTORIAL HOW TO USE THE APP</strong></a></h4>\r\n            <p>In this page you can find video tuttorial about how to use succesful our application.</p>\r\n            <h4 class=\"important\"><strong>What you can find here</strong></h4>\r\n            <div class=\"box important-box\">\r\n                <ol>\r\n                    <li>Are you a teenager looking for a job? Or perhaps a parent who is helping your kid to get their first job? You can find jobs for teens</li>\r\n                    <li>You can find help if you are parent of trouble TEEN!</li>\r\n                    <li>Can find help for busy Parents.</li>\r\n                    <li>Can add daily / weekly tasks for your child.</li>\r\n                    <li>Can have full control of your child and manage successful child's schedules.</li>\r\n                    <li>Motivate you Children to study and help with house work as well.</li>\r\n                    <li>Have full control of the weekly money.</li>\r\n                    <li>All childrens can receive more money when they do bonus tasks.</li>\r\n                </ol>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-lg-6\">\r\n            <h4 class=\"link\"><a href=\"http://www.hireteen.com/\"><strong>Hire Teen</strong></a></h4>\r\n            <p>Job application should be processed in the website of the company you are applying for or you need to follow the guideline which is provided on each company review.</p>\r\n            <h4 class=\"link\"><a href=\"http://www.snagajob.com/job-search/q-teen\"><strong>Snaga job</strong></a></h4>\r\n            <p>Get solutions across the entire hiring process—more applications, qualified hires, easier scheduling and more.</p>\r\n            <h4 class=\"link\"><a href=\"http://www.dreamhomebasedwork.com/online-jobs-for-teens/\"><strong>Dream home based work</strong></a></h4>\r\n            <p>Most people who have a regular job during the day, end up taking jobs that they can do in the evening or the night. You can actually spend your time in a more constructive way and make some money while at it.</p>\r\n            <h4 class=\"drug-abuse\"><strong>Popular part-time jobs and small business opportunities:</strong></h4>\r\n            <div class=\"box important-box\">\r\n                <ul>\r\n                    <li><strong>Animal Shelter Worker</strong></li>\r\n                    <li><strong>Arts and Crafts Production and Sales</strong></li>\r\n                    <li><strong>Babysitting</strong></li>\r\n                    <li><strong>Car Wash Attendant</strong></li>\r\n                    <li><strong>Document and Photograph Archival Services</strong></li>\r\n                </ul>\r\n            </div>\r\n            <a class=\"btn btn-lg btn-success center\" routerLink=\"/teen-jobs\" role=\"button\">FIND MORE</a>\r\n        </div>\r\n        <div class=\"col-lg-6\">\r\n            <h4 class=\"link\"><a href=\"http://www.parenthelp.org.nz/\"><strong>Parent Help</strong></a></h4>\r\n            <p>At Parent Help we offer the only designated free national parenting helpline in New Zealand that is available seven days a week. We are here to help parents. of child abuse.</p>\r\n            <h4 class=\"link\"><a href=\"http://busyparentsnetwork.com/\"><strong>Busy Parents Network</strong></a></h4>\r\n            <p>Busy Parents Network is a community social enterprise set up with the specific intention of bringing families together in the local community for fun and more.</p>\r\n            <h4 class=\"link\"><a href=\"http://www.teendrugrehabs.com/\"><strong>Teen drug rehabs</strong></a></h4>\r\n            <p>Drug abuse and addiction that starts in the teenage years can lead to lifelong abuse and addiction if the problem isn’t addressed early on. Parents need to know what to look for and how to get help.</p>\r\n            <h4 class=\"drug-abuse\"><strong>You Need to Know About Teenage Drug Abuse:</strong></h4>\r\n            <div class=\"box important-box\">\r\n                <ul>\r\n                    <li><strong>Family History.</strong></li>\r\n                    <li><strong>Relationships.</strong></li>\r\n                    <li><strong>Mental Health.</strong></li>\r\n                    <li><strong>Personal Development.</strong></li>\r\n                    <li><strong>Availability.</strong></li>\r\n                </ul>\r\n            </div>\r\n            <a class=\"btn btn-lg btn-success center\" routerLink=\"/parent-guide\" role=\"button\">FIND MORE</a>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br><br>"
-
-/***/ },
-
-/***/ 713:
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <div class=\"jumbotron\">\r\n    </div>\r\n    <h1 class=\"display-3\">TEEN@home <small>application</small></h1>\r\n    <!--hightlight-item-->\r\n    <p class=\"lead\" hightlight-item>Be a helper <a routerLink=\"/donate\">donate</a> to help develop it better!</p>\r\n    <div class=\"row marketing\">\r\n        <div class=\"col-md-8 col-md-offset-2\">\r\n            <div class=\"input-group\">\r\n                <span class=\"input-group-addon\">$</span>\r\n                <input type=\"text\" class=\"form-control\" aria-label=\"Amount (to the nearest dollar)\">\r\n                <span class=\"input-group-addon\">.00</span>\r\n            </div>\r\n            <br>\r\n            <p><a class=\"btn btn-lg btn-success right-align\" routerLink=\"/donate\" role=\"button\">DONATE NOW!</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<br><br>\r\n<br>"
-
-/***/ },
-
-/***/ 714:
-/***/ function(module, exports) {
-
-module.exports = "<footer class=\"container-fluid text-center navbar-fixed-bottom\">\r\n    <ul class=\"ul-footer\">\r\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/how-to-use\">How to use it</a><span>|</span></li>\r\n        <li class=\"footer-link\"><a class=\"a-nav-bottom a-nav-bottom-footer\" routerLink=\"/about-us\">About the App</a><span>|</span></li>\r\n        <li class=\"footer-link copyright\"><strong>TEEN@home</strong></li>\r\n    </ul>\r\n</footer>"
-
-/***/ },
-
-/***/ 715:
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"col-lg-12 background\">\r\n    <div>\r\n        <img class=\"header-banner\" src=\"./../../../../Resources/cosmos_background_logo.PNG\" alt=\"Image\">\r\n        <div class=\"carousel-caption\">\r\n            <p>TEEN@home</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"container text-center\">\r\n    <h3>What We Do</h3><br>\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-4\">\r\n            <img src=\"./../../../../Resources/lazy-teen.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">\r\n            <p><strong>LAZY TEENS</strong></p>\r\n        </div>\r\n        <div class=\"col-sm-4\">\r\n            <img src=\"./../../../../Resources/busy-parent.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">\r\n            <p><strong>BUSY PARENTS</strong></p>\r\n        </div>\r\n        <div class=\"col-sm-4\">\r\n            <div class=\"well\">\r\n                <p><strong>TEEN PROBLEMS</strong> <br> It’s not easy being a teenager in today’s world. From depression to bullying and cutting, teens grapple with a wide range of issues as they grow and develop. But here’s the good news: you’re not alone\r\n                    and you can feel better.\r\n                </p>\r\n            </div>\r\n            <div class=\"well\">\r\n                <p><strong>PARENT HELPER</strong> <br> Parenting has often been described as a full-time job. Moms and dads have to organize children’s schedules, find kid-friendly places to eat, and remember all the things that their family needs from the\r\n                    grocery store this week.\r\n                </p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div><br><br>"
-
-/***/ },
-
-/***/ 716:
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <h2>Learn how to use our product!</h2>\r\n    <hr>\r\n    <div class=\"video-container\">\r\n        <iframe width=\"853\" height=\"480\" src=\"http://www.screencast.com/t/8gs9mqlr9lF\" frameborder=\"0\" allowfullscreen></iframe>\r\n    </div>\r\n</div>\r\n<br>"
-
-/***/ },
-
-/***/ 717:
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <h2>LOGIN</h2>\r\n    <hr>\r\n    <form class=\"form-horizontal\" #superheroesForm=\"ngForm\" (ngSubmit)=\"login();\">\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\">User Name:</label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" id=\"userName\" placeholder=\"User Name\" name=\"username\" [(ngModel)]=\"model.username\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Password:</label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" name=\"password\" [(ngModel)]=\"model.password\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <div class=\"col-sm-offset-2 col-sm-10\">\r\n                <button type=\"submit\" class=\"btn btn-primary\">SUBMIT</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>\r\n<br>"
-
-/***/ },
-
-/***/ 718:
-/***/ function(module, exports) {
-
-module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/home\"><img class=\"logo\" src=\"./../../../../Resources/logo.PNG\"> </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li><a routerLink=\"/how-to-use\">HOW TO USE IT</a></li>\r\n                <li><a routerLink=\"/about-us\">ABOUT THE APP</a></li>\r\n            </ul>\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n\r\n                <li *ngIf=\"isLoggedIn()\"><a routerLink=\"/jobs\"><span class=\"glyphicon glyphicon-equalizer\"></span> JOBS</a></li>\r\n                <li *ngIf=\"isLoggedIn()\"><a routerLink=\"/my-profile\"><span class=\"glyphicon glyphicon-user\"></span> MY PROFILE</a></li>\r\n                <li *ngIf=\"isLoggedIn()\"><a (click)=\"logout()\" routerLink=\"/home\"><span class=\"glyphicon glyphicon-log-out\"></span> LOGOUT</a></li>\r\n                <li *ngIf=\"!isLoggedIn()\"><a routerLink=\"/login\"><span class=\"glyphicon glyphicon-log-in\" ></span> LOGIN</a></li>\r\n                <li *ngIf=\"!isLoggedIn()\"><a routerLink=\"/register\"><span class=\"glyphicon glyphicon-lock\"></span> REGISTER</a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>"
-
-/***/ },
-
-/***/ 719:
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <h2>CREATE NEW ACCOUNT</h2>\r\n    <hr>\r\n    <form class=\"form-horizontal\" #registerForm=\"ngForm\" (ngSubmit)=\"add();\">\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\">First Name:</label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" id=\"firstName\" placeholder=\"First Name\" name=\"firstName\" [(ngModel)]=\"model.firstName\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\">Last Name:</label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" id=\"lastName\" placeholder=\"Last Name\" name=\"lastName\" [(ngModel)]=\"model.lastName\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\">User Name:</label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"name\" class=\"form-control\" id=\"userName\" placeholder=\"User Name\" name=\"username\" [(ngModel)]=\"model.username\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"email\">Email:</label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\" [(ngModel)]=\"model.email\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Password:</label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" name=\"password\" [(ngModel)]=\"model.password\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label class=\"control-label col-sm-2\" for=\"pwd\">Avatar:</label>\r\n            <div class=\"col-sm-10\">\r\n                <input type=\"avatar\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter avatar URL (optional)\" name=\"profilePictureUrl\" [(ngModel)]=\"model.profilePictureUrl\">\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <div class=\"col-sm-offset-2 col-sm-10\">\r\n                <button type=\"submit\" class=\"btn btn-primary\">SUBMIT</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>\r\n<br>"
-
-/***/ },
-
-/***/ 735:
+/***/ 727:
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(406);
+module.exports = __webpack_require__(403);
 
 
 /***/ }
 
-},[735]);
+},[727]);
 //# sourceMappingURL=main.bundle.map

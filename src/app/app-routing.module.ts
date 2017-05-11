@@ -12,8 +12,6 @@ import { UpdateInfoComponent } from './components/private/update-info/update-inf
 import { JobsComponent } from './components/private/jobs/jobs.component';
 import { SingleJobComponent } from './components/private/single-job/single-job.component';
 import { AddJobComponent } from './components/private/add-job/add-job.component';
-import { DonateComponent } from './components/public/donate/donate.component';
-import { AddTaskComponent } from './components/private/add-task/add-task.component';
 
 import { FooterComponent } from './components/public/footer/footer.component';
 import { LoggedInGuard } from'./services/logged.in.guard';
@@ -71,15 +69,6 @@ const routes: Routes = [
     component: AddJobComponent,
     canActivate: [NotLoggedInGuard]
   },
-  {
-    "path": 'donate',
-    component: DonateComponent,
-  },
-  {
-    "path": 'add-task',
-    component: AddTaskComponent,
-    canActivate: [NotLoggedInGuard]
-  }
 ];
 
 @NgModule({
@@ -89,4 +78,4 @@ const routes: Routes = [
 
 export class AppRoutingModule { }
 
-export const routedComponents = [ RegisterComponent, LoginComponent, HowToUseComponent, AboutUsComponent, HomeComponent, FooterComponent, MyProfileComponent, UpdateInfoComponent, JobsComponent, SingleJobComponent, AddJobComponent, DonateComponent, AddTaskComponent ];
+export const routedComponents = [ RegisterComponent, LoginComponent, HowToUseComponent, AboutUsComponent, HomeComponent, FooterComponent, MyProfileComponent, UpdateInfoComponent, JobsComponent, SingleJobComponent, AddJobComponent];

@@ -3,7 +3,7 @@
 // MongoDB config
 const mongojs = require('mongojs');
 const connectionString = 'mongodb://Admin:secretPassword@ds151048.mlab.com:51048/teen_database';
-const collections = ['users', 'jobs', 'groups'];
+const collections = ['users', 'jobs'];
 
 const db = mongojs(connectionString, collections);
 
@@ -138,17 +138,6 @@ apiRouter
 			}
 
 			return res.status(200).json(job);
-		});
-	})
-	.post('/groups', function(req, res, next) {
-		let group = req.params;
-
-		db['groups'].save(group, function(err, group) {
-			if (err) {
-				return res.status(400).json({ "error": "Error in DB" });
-			}
-
-			return res.status(200).json(group);
 		});
 	})
 
