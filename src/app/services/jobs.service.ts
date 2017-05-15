@@ -22,24 +22,37 @@ export class JobsService {
                 alert("You have created job successfully.");
                 response.json().data 
             })
-            .catch(err => alert(JSON.parse(err._body).error));
+            .catch(err => console.log(JSON.parse(err._body).error));
   }
 
-    getAllJobs(): any {
+  editJobById(job: Job): any {
+      return this.http
+        .post('/api/jobs/update/' + job.id, JSON.stringify(job), this.options)
+        .toPromise()
+        .then(response =>{
+            this.router.navigateByUrl('/jobs');
+            alert("You have edited the job successfully.");
+            response.json().data 
+        })
+        .catch(err => console.log(JSON.parse(err._body).error));
+  }
+
+    getAllJobsForPage(page: Number): any {
         return this.http
-            .get('/api/jobs', this.options)
+            .get('/api/jobs/' + page, this.options)
             .toPromise()
-            .then((response: Response) => response.json());
+            .then((response: Response) => response.json())
+            .catch(err => console.log(JSON.parse(err._body).error));
     }
 
     getJobById(id: string): any {
         return this.http
-            .get('/api/jobs/' + id)
+            .get('/api/jobs/single-job/' + id)
             .toPromise()
             .then(response => {
                 return response.json();
             })
-            .catch(er => alert(JSON.parse(er._body).error));
+            .catch(err => console.log(JSON.parse(err._body).error));
     }
 
     deleteJobById(id: string): any {
@@ -47,11 +60,10 @@ export class JobsService {
             .post('/api/jobs/delete/' + id, {}, this.options)
             .toPromise()
             .then(response =>{
-                console.log("RESPOSNSE");
                 this.router.navigateByUrl('/jobs');
                 alert("You have deleted job successfully.");
                 return response.json().data;
             })
-            .catch(err => alert(JSON.parse(err._body).error));
+            .catch(err => console.log(JSON.parse(err._body).error));
     }   
 }

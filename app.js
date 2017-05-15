@@ -98,6 +98,29 @@ apiRouter
 			});
 		});
 	})
+	.get('/jobs/single-job/:id', function(req, res, next) {
+		let id = req.params.id;
+
+		db['jobs'].findOne({ _id: new ObjectId(id) }, function(err, job) {
+			if (err) {
+				return res.status(400).json({ "error": "Error in DB" });
+			}
+
+			return res.status(200).json(job);
+		});
+	})
+	.post('/jobs/update/:id', function(req, res, next) {
+		let id = req.params.id;
+
+		console.log(req.body);
+		db['jobs'].update({ _id: new ObjectId(id) }, req.body, { upsert: true }, function(err, editedJob) {
+			if (err) {
+				return res.status(400).json({ "error": "Error in DB" });
+			}
+
+			return res.status(200).json(editedJob);
+		});
+	})
 	.post('/jobs/delete/:id', function(req, res, next) {
 		let id = req.params.id;
 
@@ -109,13 +132,21 @@ apiRouter
 			return res.status(200).json(deletedJob);
 		})
 	})
-	.get('/jobs', function(req, res, next) {
+	.get('/jobs/:page', function(req, res, next) {
+		let page = +req.params.page;
+
 		db['jobs'].find({}, function(err, jobs) {
 			if (err) {
 				return res.status(400).josn({ "error": "Error in DB" });
 			}
 
-			return res.status(200).json(jobs);
+			let result = {};
+			result.totalPages = Math.floor(jobs.length / 9) + 1;
+
+			jobs = jobs.slice(page * 8 - 8, page * 8);
+			result.jobs = jobs;
+
+			return res.status(200).json(result);
 		});
 	})
 	.post('/jobs', function(req, res, next) {
@@ -127,17 +158,6 @@ apiRouter
 			}
 
 			return res.status(200).json(user);
-		});
-	})
-	.get('/jobs/:id', function(req, res, next) {
-		let id = req.params.id;
-
-		db['jobs'].findOne({ _id: new ObjectId(id) }, function(err, job) {
-			if (err) {
-				return res.status(400).josn({ "error": "Error in DB" });
-			}
-
-			return res.status(200).json(job);
 		});
 	})
 

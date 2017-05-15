@@ -12,50 +12,31 @@ import { ActivatedRoute, Params } from '@angular/router';
 export class JobsComponent implements OnInit {
   private jobs: Job[] = [];
   private pages: number[] = [];
-  private allJobs = [];
 
   constructor(private jobsService: JobsService, private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.getAllJobs()
+    this.changePage(1);  
+  }
+
+  changePage(page: number): void {
+    page = +page;
+    this.jobsService.getAllJobsForPage(page)
       .then(result => {
-        this.allJobs = result;
-        let pageNumber = 0;
-        for (let i: number = 0; i < result.length; i += 1) {
-          if (i % 8 === 0) {
-            pageNumber += 1;
-            this.pages.push(pageNumber);
-          }
+        this.pages = [];
+        for (let i = 1; i <= result.totalPages; i += 1) {
+          this.pages.push(i);
         }
 
-        let page = 1;
         this.jobs = [];
-        for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
-          let job = result[i];
+        for (let i = 0; i < result.jobs.length; i += 1) {
+          let job = result.jobs[i];
           let currentJob: Job = new Job(job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
           currentJob.id = job._id;
 
           this.jobs.push(currentJob);
         }
-      });    
-  }
-
-  changePage(page: number): void {
-    console.log("ASD");
-    console.log(page);
-    page = +page;
-    this.jobs = [];
-    for (let i: number = (page * 8) - 8; i < (page * 8); i += 1) {
-      let job = this.allJobs[i];
-      let currentJob: Job = new Job(job.title, job.workHours, job.salary, job.description, job.author, job.pictureUrl);
-      currentJob.id = job._id;
-
-      this.jobs.push(currentJob);
-    }
-  }
-
-  getAllJobs(): any {
-    return this.jobsService.getAllJobs(); 
+      }); 
   }
 }

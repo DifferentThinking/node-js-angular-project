@@ -19,7 +19,6 @@ export class AddJobComponent implements OnInit {
     this.model.author = JSON.parse(localStorage['currentUser']).username;
   }
 
-
   addJob(): void {
     this.jobsService.addJob(this.model);
   }

@@ -11,6 +11,7 @@ import { UpdateInfoComponent } from './components/private/update-info/update-inf
 import { JobsComponent } from './components/private/jobs/jobs.component';
 import { SingleJobComponent } from './components/private/single-job/single-job.component';
 import { AddJobComponent } from './components/private/add-job/add-job.component';
+import { EditJobComponent } from './components/private/edit-job/edit-job.component';
 
 @Component({
   selector: `app-root`,

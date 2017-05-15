@@ -34,7 +34,6 @@ export class SingleJobComponent implements OnInit {
   } 
 
   deleteJob(): void{
-    console.log('called deleteJob');
     this.jobsService.deleteJobById(this.route.params['_value'].id);
   }
 }
