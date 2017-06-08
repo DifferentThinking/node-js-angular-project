@@ -2,7 +2,7 @@
 
 // MongoDB config
 const mongojs = require('mongojs');
-const connectionString = 'mongodb://Admin:secretPassword@ds151048.mlab.com:51048/teen_database';
+const connectionStringff = 'mongodb://Admin:secretPassword@ds151048.mlab.com:51048/teen_database';
 const collections = ['users', 'jobs'];
 
 const db = mongojs(connectionString, collections);
@@ -21,10 +21,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const jwt = require('jsonwebtoken');
-
-function createToken(user) {
-  return jwt.sign(user, "ngEurope rocks!", { expiresIn : 60*5 });
-}
 
 const apiRouter = new express.Router();
 
@@ -86,15 +82,14 @@ apiRouter
 		db['users'].findOne({ username: req.body.username }, function(err, user) {
 			if (!user) {
 				return res.status(401).json({ "error": "The username or password doesn't match" });
-			}
+			}	
 			if (!(user.password === req.body.password)) {
 				return res.status(401).json({ "error": "The username or password doesn't match" });
 			}
 			
 			res.status(200).send({
 				group: user.groupName,
-				role: user.role,
-				id_token: createToken(user)
+				role: user.role
 			});
 		});
 	})
